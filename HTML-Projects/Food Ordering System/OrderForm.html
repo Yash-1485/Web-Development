@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="Texture.png">
+    <form action="OrderAction.html" method="get">
+        <table border="1">
+            <tr>
+                <td width="500">
+                    <label for="fname">
+                        <font face="Courier" size="4" color="#ff5500">
+                            <b>Enter Your First Name: </b>
+                        </font>
+                    </label>
+                    <input type="text" id="fname" class="name" size="30" placeholder="Enter Your First Name Here" autofocus required  title="First Name">
+                </td>
+                <td width="500">
+                    <label for="lname">
+                        <font face="Courier" size="4" color="#ff5500">
+                            <b>Enter Your Last Name: </b>
+                        </font>
+                    </label>
+                    <input type="text" id="lname" class="name" size="30" placeholder="Enter Your Last Name Here" autofocus required  title="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="item">
+                        <font face="Courier" color="#ff5500" size="4">
+                            <b>Enter Food Item:</b>
+                        </font>
+                    </label>
+                    <select name="fooditem" id="item" title="Food Item">
+                        <option id="none" value="Select Food Item">Select Food Item</option>
+                        <option id="BhajiPav" value="Bhajipav">Bhajipav</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="VadaPav">Vadapav</option>
+                        <option value="Tacobell">Tacobell</option>
+                        <option value="Samosa">Samosa</option>
+                    </select>
+                    <!-- <input type="number" id="rate" class="rate" name="rate"> -->
+                </td>
+                <td>
+                    <label for="item">
+                        <font face="Courier" color="#ff5500" size="4">
+                            <b>Enter Pincode:</b>
+                        </font>
+                    </label>
+                    <input type="number" id="pin" class="pincode" name="pin" min="380000" max="380100" value="380058" required title="Pincode">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
