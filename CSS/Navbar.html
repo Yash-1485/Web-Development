@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+    <style>
+        nav ul{
+            list-style-type: none;
+            display: flex;
+        }
+        
+        nav ul li{
+            font-family: 'Baloo Bhai 2';
+            color: brown;
+            font-size: large;
+            font-weight: 500;
+            padding-right: 20px;
+            background-color: azure;
+        }
+
+        nav ul li::after{
+            content: '';
+            background: red;
+            width:0%;
+            height:2px;
+            display: block;
+            transition: 0.5s;
+            margin:auto;
+        }
+
+        nav ul li:hover::after{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div>
+            <nav class="navBar">
+                <ul class="navLinks">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Course</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</body>
+</html>
