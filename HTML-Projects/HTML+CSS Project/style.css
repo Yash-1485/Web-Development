@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --navigation bar-- */
+.header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{    
+    display: flex;
+    padding: 2% 6%;
+}
+
+nav a img{
+    width: 250px;
+    height: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-right: 20px;
+    font-size: large;
+    font-family: 'Poppins';
+
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color: red; 
+    transition: 0.5s;   
+}
+
+nav ul li:hover::after{
+    width:100%;
+}
+
+nav ul li a{
+    font-weight: 600;
+    text-decoration: none;
+    color:white;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;    
+}
+
+/* header text container */
+.container{    
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 5%    
+}
+
+.container{
+    margin-top: 150px;
+}
+
+.container h1{    
+    font-family: 'Baloo Bhaijaan 2';
+    font-weight: 800;
+    font-size: 40px;
+    color: rgb(43, 41, 39); 
+}
+
+.container p{
+    font-weight: 700;
+    font-family: 'Poppins';
+    font-size: large;
+    color: rgb(25, 39, 39);
+}
+
+.herobtn{
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    font-family: 'Poppins', Courier, monospace;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.herobtn:hover{
+    border: 1px solid black;
+    background-color: rgb(223, 16, 16);
+    transition: 1.5s;
+}
+
+/*Courses*/
+
+.course{
+    width: 80%;
+    padding-top: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+p{
+    line-height: 20px;
+    font-size: medium;
+    font-family: 'Arial';
+    font-weight: 400;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-family: 'Baloo Bhaijaan 2';
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 20px 20px;
+    box-sizing: border-box;    
+    transition: 1s;
+    cursor: pointer;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+/* --campus-- */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.campus-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+
+.campus-col img{    
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+}
+/* #b1{
+    width: 250px;
+    border-radius: 10px;
+} */
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.layer:hover{
+    background-color: rgba(225,0,0,0.5);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* --facilites-- */
+.facilities{
+    width: 80%;
+    margin: auto;
+    padding-top: 75px;
+    text-align: center;    
+}
+
+.facilities-col{
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.facilities-col img{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.facilities-col p{padding: 0;text-align: left;}
+
+.facilities h3{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* --tastinomonials-- */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.testimonials-col{
+    flex-basis: 45%;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: rgba(197, 130, 126, 0.267);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.testimonials-col img{
+    height: 75px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;}
+
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.fa{
+    color:rgb(255, 166, 0);
+}
+/* .rate > input {
+    display: none;
+} */
+/* Order correctly by floating highest to the right
+.rate > label {
+    float: right;
+} */
+/* The star of the show */
+/* .rate > label:before {
+    display: inline-block;
+    font-size: 2rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 ";
+} */
+
+/* Half star trick */
+/* .rate .half:before {
+    content: "\f089 "; /*
+    position: absolute;
+    padding-right: 0;
+} */
+/* Click + hover color */
+/* input:checked ~ label, 
+label:hover, label:hover ~ label { color: #73B100;  } color previous stars on hover */
+
+/* Hover highlights */
+/* input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+/* input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label  */
+
+/* Contact Us */
+.cta{
+    margin: 5% auto;
+    width: 80%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(classroom.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding:0;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: darkgrey;
+}
+
+.footer h4{
+    font-family: 'Baloo Bhaijaan 2';
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.icons{
+    text-align: center;
+}
+
+.fa-brands{
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 20px 0;
+}
+
+.icons i{
+    font-size: xx-large;
+}
+
+body{
+    user-select: none;
+}
