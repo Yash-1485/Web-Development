@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qb-68</title>
+</head>
+<body>
+    <form action="" method="get">
+        <table bgcolor="lightgrey" border="1" align="center" cellpadding="0">
+            <caption align="center">Registration form</caption>
+            <tr align="center">
+                <td width="140"><label for="fname"><strong>Enter your first name</strong></label></td>
+                <td width="230" align="left"><input type="text" name="" id="fname" placeholder="enter your first name" required></td>
+            </tr>
+            <tr align="center">
+                <td><label for="lname"><strong>Enter your last name</strong></label></td>
+                <td align="left"><input type="text" name="" id="lname" required></td>
+            </tr>
+            <tr align="center">
+                <td><label for="pwd"><strong>Enter your password</strong></label></td>
+                <td align="left"><input type="password" name="" id="pwd" required></td>
+            </tr>
+            <tr align="center">
+                <td><label for="repwd"><strong>ReEnter your password</strong></label></td>
+                <td align="left"><input type="password" name="" id="repwd" required></td>
+            </tr>
+            <tr align="center">
+                <td><label for="email"><strong>Enter your email</strong></label></td>
+                <td align="left"><input type="email" name="" id="email" required></td>
+            </tr>
+            <tr align="center">
+                <td><label for="mobile"><strong>Enter your mobile</strong></label></td>
+                <td align="left"><input type="text" name="" id="mobile" required></td>
+            </tr>
+            <tr align="center">
+                <td><label for="address"><strong>Enter your address</strong></label></td>
+                <td align="left">
+                    <textarea name="" id="address" rows="8" cols="" required></textarea>
+                </td>
+            </tr>
+            <tr align="center">
+                <td><label for="gender"><strong>Select your gender</strong></label></td>
+                <td align="left">
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                </td>
+            </tr>
+            <tr align="center">
+                <td><label for="hobby"><strong>Select your hobbies</strong></label></td>
+                <td align="left">
+                    hobby1
+                    <input type="checkbox" name="hobby" id="hobby1">
+                    hobby2
+                    <input type="checkbox" name="hobby" id="hobby2">
+                    hobby3
+                    <input type="checkbox" name="hobby" id="hobby3">
+                </td>
+            </tr>
+            <tr align="center">
+                <td><label for="dob"><strong>Select your DOB</strong></label></td>
+                <td align="left">
+                    <input type="date" name="" id="dob" required>
+                </td>
+            </tr>
+            <tr align="center">
+                <td><label for="country"><strong>Select your country</strong></label></td>
+                <td align="left">
+                    <select name="country" id="country" required>
+                        <option value="" hidden selected>Select your country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Russia">Russia</option>
+                        <option value="England">England</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="center">
+                <td><label for="pic"><strong>Upload your pic</strong></label></td>
+                <td align="left">
+                    <input type="file" name="" id="pic" required>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" value="Save My Data">
+                    <input type="reset" value="Reset Data">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
