@@ -1,34 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <p><font size="5" face="Calibri">Create a free account</font></p>
+
+<body alink="green" vlink="green" link="green">
+    <p>
+        <font size="5" face="Calibri">Create a free account</font>
+    </p>
     <form action="success.html" method="get">
-        <!-- <fieldset>
+        <fieldset>
             <legend>
-                <font face="arial" size="4" color="green">Account Details</font>
+                <font face="Arial" size="3" color="green">Account Details</font>
             </legend>
-        </fieldset> -->
-        <!-- <font face="arial" size="3" color="green">Account Details</font> -->
-        <svg height="50" width="auto">
-            <line x1="10" y1="25" x2="27" y2="25" stroke="green"></line>
-            <text x="30" y="30" font-size="15" font-family="Arial" fill="green">Account Details</text>
-            <line x1="138" y1="25" x2="5000" y2="25" stroke="green"></line>
-        <svg><br>
-        <svg height="50" width="auto">
-            <line x1="10" y1="25" x2="27" y2="25" stroke="green"></line>
-            <text x="30" y="30" font-size="15" font-family="Arial" fill="green">Personal Details</text>
-            <line x1="138" y1="25" x2="5000" y2="25" stroke="green"></line>
-        <svg><br>
-        <svg height="50" width="auto">
-            <line x1="10" y1="25" x2="27" y2="25" stroke="green"></line>
-            <text x="30" y="30" font-size="15" font-family="Arial" fill="green">Terms and Mailing</text>
-            <line x1="138" y1="25" x2="5000" y2="25" stroke="green"></line>
-        <svg>        
+            <table align="center">
+                <tr align="center">
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="email">Email*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="email" name="" id="email" required></font>
+                    </td>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="pwd">Password*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="password" name="" id="pwd" required></font>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="email">Repeat email*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="email" name="" id="reemail" required></font>
+                    </td>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="repwd">Repeat password*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="password" name="" id="repwd" required></font>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <font face="Arial" size="3" color="green">Personal Details</font>
+            </legend>
+            <table align="center">
+                <tr>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="name">Name*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="text" name="" id="name" required></font>
+                    </td>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="gender">Gender*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" required>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" required>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="phone">Phone*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="text" name="" id="phone" required></font>
+                    </td>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="bdate">Birthdate*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2">
+                            <select name="date" id="date" required>
+                                <option value="" hidden selected>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="month" id="month" required>
+                                <option value="" hidden selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <input type="text" name="" id="" size="1" value="2024" disabled>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="street">Street</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="text" name="" id="street" required></font>
+                    </td>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="nationality">Nationality*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2">
+                            <select name="nationality" id="nationality" required>
+                                <option value="" hidden selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </option>
+                                <option value="Indian">Indian</option>
+                                <option value="American">American</option>
+                                <option value="Australian">Australian</option>
+                                <option value="Russian">Russian</option>
+                                <option value="English">English</option>
+                            </select>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="city">City*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="text" name="" id="city" required></font>
+                    </td>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="childs">Children*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="checkbox" name="" id="childs"></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="country">Country*</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2">
+                            <select name="country" id="country" required>
+                                <option value="" hidden selected>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Russia">Russia</option>
+                                <option value="England">England</option>
+                            </select>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200" align="right">
+                        <font face="Arial" size="2"><label for="website">Website</label></font>
+                    </td>
+                    <td width="200" align="left">
+                        <font face="Arial" size="2"><input type="text" name="" id="website" required></font>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <font face="Arial" size="3" color="green">Terms and mailing</font>
+            </legend>
+            <table align="center">
+                <tr align="left">
+                    <td><input type="checkbox" name="p_policy" id="p_policy">
+                        <label for="p_policy">
+                            <font face="Arial" size="2">I accept the </font>
+                            <font face="Arial" size="2" color="green"><a href="">Privacy Policy for W3Docs.</a></font>
+                        </label>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <input type="checkbox" name="p_policy" id="p_policy">
+                        <label for="p_policy">
+                            <font face="Arial" size="2">I wnat to recelve personllized offeresby your site.</a></font>
+                        </label>
+                    </td>
+                </tr>
+                <tr align="left">
+                    <!-- <td><input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" size="100"></td> -->
+                    <td><button type="submit" value="Submit"><font face="Arial" size="3" color="green">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+                    </button></td>
+                </tr>
+            </table>
+        </fieldset>
     </form>
 </body>
+
 </html>
