@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practise 4</title>
+</head>
+
+<body>
+    <form action="" align="left">
+        <fieldset>
+            <legend>
+                Signup
+            </legend>
+            <table>
+                <tr>
+                    <td width="140">User name</td>
+                    <td width="140"><input type="text" name="name" id="name" required autofocus placeholder="EnterName"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pwd" id="pwd" required placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" id="male" required checked>Male<input type="radio" name="gender" id="female" required>Female<input type="radio" name="gender" id="others" required>Others</td>
+                </tr>
+                <tr>
+                    <td>Birth Date</td>
+                    <td><input type="date" name="date" id="date" required></td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Area of Interest</td>
+                    <td><input type="checkbox" name="" id="ds">DS<input type="checkbox" name="" id="dbms">DBMS<input type="checkbox" name="" id="Full Stack">Full Stack</td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td><select name="" id="">
+                        <option value="">--Select Branch--</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>No. of Book Issued</td>
+                    <td><input type="number" name="number" id="number" required></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="address" rows="6" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Upload CV</td>
+                    <td><input type="file" name="file" id="file" required></td>
+                </tr>
+                <tr>
+                    <td>Search Here</td>
+                    <td><input type="search" name="search" id="search"></td>
+                </tr>
+                <tr>
+                    <td>Rate this form(0,50)</td>
+                    <td><input type="range" name="rate" id="rate" max="50" min="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Click me"> <input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
