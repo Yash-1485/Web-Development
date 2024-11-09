@@ -362,5 +362,6 @@ label:hover ~ input:checked ~ label  */
 }
 
 body{
+    overflow-x: hidden;
     user-select: none;
 }
