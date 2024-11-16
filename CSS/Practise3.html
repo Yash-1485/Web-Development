@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 3</title>
+    <style>
+        div.container{
+            height: 200px;
+            width: 400px;
+        }
+
+        .box1,.box2,.box3{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            float: left;
+        }
+
+        .traffic{
+            padding: 10px;
+            height: 500px;
+            width: 120px;
+            border: 1px solid black;
+            border-radius: 30px;
+            color: white;
+            background-color: black;
+        }
+        
+        .light1,.light2,.light3{
+            height: 100px;
+            width: 100px;
+            border: 1px ridge black;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .light1{
+            background-color: red;
+        }
+
+        .light2{
+            background-color: yellow;
+        }
+
+        .light3{
+            background-color: green;
+        }
+
+        #b1{
+            background-image: repeating-linear-gradient(to top right,blue 5%,black 10%,red 15%);
+        }
+        #b2{
+            background-image: repeating-linear-gradient(to left,grey 5%,white 10%,black 15%);
+        }
+        #b3{
+            background-image: repeating-linear-gradient(135deg,aqua,white,grey,cyan);
+        }
+
+        #b4{
+            background-image: repeating-radial-gradient(red 5%,orange 10%,yellow 15%);
+        }
+
+        #b5{
+            /*background-image: repeating-radial-gradient(ellipse,red,yellow,green);*/
+            /*background-image: repeating-radial-gradient(closest-side at 60% 50%,red,yellow 10%,green 15%);*/
+            /*background-image: repeating-radial-gradient(farthest-side at 60% 50%,red,yellow 10%,green 15%);*/
+            /*background-image: repeating-radial-gradient(closest-corner at 60% 50%,red,yellow 10%,green 15%);*/
+            background-image: repeating-radial-gradient(farthest-corner at 40% 60%,red,yellow 10%,green 15%);
+        }
+
+        #b6{
+            background-image: repeating-radial-gradient(at 60% 50%,red,yellow,black);
+        }
+
+        #b7{
+            background-image: repeating-conic-gradient(at 0% 50%,red 5%,orange 10% , yellow 15%, green 20%, blue 25%,indigo 30%,violet 35%);
+        }
+
+        #b8{
+            background-image: repeating-conic-gradient(red 5%,yellow 10%,blue 15%);
+        }
+
+        #b9{
+            background-image: repeating-conic-gradient(red 0deg 10deg,yellow 10deg 20deg,blue 20deg 30deg);
+            /*border-radius: 50%;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repeating Linear Gradient</h1>
+        <div id="b1" class="box1"></div>
+        <div id="b2" class="box2"></div>
+        <div id="b3" class="box3"></div>
+    </div>
+    <div class="container">
+        <h1>Repeating Radial Gradient</h1>
+        <div id="b4" class="box1"></div>
+        <div id="b5" class="box2"></div>
+        <div id="b6" class="box3"></div>
+    </div>
+    <div class="container">
+        <h1>Repeating Conic Gradient</h1>
+        <div id="b7" class="box1"></div>
+        <div id="b8" class="box2"></div>
+        <div id="b9" class="box3"></div>
+    </div>
+
+    <div class="traffic">
+        <h1>Traffic Lights Example</h1>
+        <div class="light1"></div>
+        <div class="light2"></div>
+        <div class="light3"></div>
+    </div>
+</body>
+</html>
