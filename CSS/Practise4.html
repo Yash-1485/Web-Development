@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 4</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            position: relative;
+            /* align-content: center; */
+        }
+        .box1{
+            position: relative;
+            top: 15px;
+            text-align: center;
+            font-size: xx-large;
+            /* Border - Width-style-color , radius */
+            /* top-right-bottom-left */
+            /* border-style: dashed; */
+            /* border-style: dashed dotted; */
+            /* top-bottom right-left */
+            /* border-style: dashed solid dotted; */
+            /* top right-left bootom */
+
+            border-width: 10px;            
+            border-style: double;
+            /* outset, ridge, solid, dashed, dotted, inset, double, groove, hidden, none*/
+            border-color: red blue yellow;
+            border-radius: 10px;
+
+            /* Shorthand */
+            /* border: 10px double red; */
+        }
+
+        .box2{
+            position: relative;
+            top: 50px;
+            border: 5px ridge red;
+        }
+
+        .box3{
+            position: relative;
+            top: 80px;
+
+            border-width: 7px;
+            border-style: inset outset;
+            border-color: grey;
+        }
+
+        .f1{
+            /* font: style variant weight size font-family;*/
+            color: red;
+            font-family: arial,'calibri','comic sans ms',sans-serif;
+            font-size: smaller;
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-style: italic;
+        }
+
+        .f2{
+            /* shorthand */
+            color: blue;
+            font: oblique normal bold 20px 'Comic Sans MS',cursive;            
+        }
+
+        .f3{
+            color: green;
+            font: small-caps 500 medium calibri,'verdana',sans-serif;
+        }
+
+        /* Text Property*/
+        .t1{
+            color: brown;
+            font: oblique normal 700 large 'Comic Sans MS';
+            text-align: center;
+            text-decoration-line: underline overline line-through;
+            text-decoration-style: dotted;
+            text-decoration-color: black;
+            text-decoration-thickness: 2px;            
+        }
+
+        .t2{
+            /* shorthand */
+            color: blue;
+            font: bold small arial;
+            text-decoration: wavy underline green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Font Practise</h1>
+    <div class="container">
+        <div class="f1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, soluta?</div>
+        <div class="f2">Lorem ipsum dolor sit amet.</div>
+        <div class="f3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit ipsa minus obcaecati, provident tempora!</div>
+    </div>
+
+    <h1>CSS Text Practise</h1>
+    <div class="container">
+        <div class="t1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quasi?</div>
+        <div class="t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi, impedit harum ipsa culpa ut.</div>
+    </div>
+
+    <h1>CSS Border Practise</h1>
+    <div class="container">
+        <div class="box1">Hello</div>
+        <div class="box2">Hello</div>
+        <div class="box3">Hello</div>
+    </div>
+</body>
+</html>
