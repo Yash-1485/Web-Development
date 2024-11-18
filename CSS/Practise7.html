@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 7</title>
+    <style>
+        h1{
+            width: max-content;
+            position: absolute;
+            margin: 100px;
+        }
+
+        h1::after{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            height: 5px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: aquamarine;
+            left: 0;
+            transition: all 1s ease;
+            transform: scaleX(0);
+        }
+
+        h1:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="myLink">Hover Me</h1>
+</body>
+</html>
