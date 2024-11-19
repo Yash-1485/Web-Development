@@ -11,6 +11,7 @@
             padding: 0;
             background-color: grey;
             display: flex;
+            position: relative;
         }
 
         li a{
@@ -19,14 +20,14 @@
             color: white;
             text-decoration: none;
             font: 500 large verdana;
-            transition: all 0.5s ease;            
+            transition: all 1s ease;
+            position: relative;            
         }
 
-        /*
         a::after{
             content: '';
             position: absolute;
-            bottom: -2px;
+            bottom: 0px;
             height: 5px;
             left: 0px;
             width: 100%;
@@ -35,12 +36,12 @@
             transition: all 0.2s ease-in-out;
             transform: scaleX(0);
         }        
-        */
 
-        li a:hover{
+        li a:hover::after{
+            z-index: 1;
             color: white;
             font-size: larger;
-            background-color: rgb(56, 52, 52);
+            transform: scaleX(1);
             /*border: 2px solid;*/
         }
     </style>
