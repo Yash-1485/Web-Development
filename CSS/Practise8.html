@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise8</title>
+    <style>
+        .anime{
+            transition: all 0.5s ease;
+        }
+        .car{
+            height: 200px;
+            width: 400px;
+            background-color: beige;
+            border-radius: 20px;
+            position: relative;            
+        }
+
+        .tyre1,.tyre2{
+            height: 100px;
+            width: 100px;
+            background-image: repeating-conic-gradient(black 0deg 45deg,grey 45deg 90deg);
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-right: 100px;
+            position: relative;            
+        }
+
+        .tyre1{
+            top: 150px;
+            left: 50px;
+        }
+
+        .tyre2{
+            top: 50px;
+            left: 250px;
+        }
+
+        .tyre1:hover,.tyre2:hover,.car:hover{
+            /*transform: translate(400px,400px) rotate(500deg);*/
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+<body>
+    <div class="car anime">
+        <div class="tyre1 anime"></div>
+        <div class="tyre2 anime"></div>
+    </div>    
+</body>
+</html>

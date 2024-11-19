@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 9</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            display: flex;
+        }
+
+        li a{
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font: 500 large verdana;
+            transition: all 0.5s ease;            
+        }
+
+        /*
+        a::after{
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            height: 5px;
+            left: 0px;
+            width: 100%;
+            background-color: red;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+            transform: scaleX(0);
+        }        
+        */
+
+        li a:hover{
+            color: white;
+            font-size: larger;
+            background-color: rgb(56, 52, 52);
+            /*border: 2px solid;*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal Scrollbar</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</body>
+</html>
