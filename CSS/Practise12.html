@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 12</title>
+    <style>
+        .container {
+            background-color: rgb(221, 221, 221);
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            position: relative;
+            /* width: 50%; */
+        }
+
+        label {
+            font: 500 large Verdana, Geneva, Tahoma, sans-serif;
+            margin: 5px;
+        }
+
+        input[type="text"],
+        input[type="submit"],
+        select {
+            margin: 10px 5px;
+            padding: 5px;
+            display: block;
+            color: black;
+            font: 500 large verdana;
+            width: 98%;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /*::after{
+            content: '';
+            position: absolute;
+            bottom: 1px;
+            left: 0px;
+            height: 3px;
+            width: 100%;            
+            background-color: grey;
+            transform: scaleX(0);
+            transition: all 0.5s ease-in-out;
+        }*/
+
+        /*input:focus{
+            transform: scaleX(1);
+            border-bottom: 3px inset grey;            
+        }
+        */
+
+        input[type="text"]:focus::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 5px;
+            height: 3px;
+            width: 100%;
+            background-color: grey;
+            transform: scaleX(1);
+            transition: all 0.5s ease-in-out;
+        }
+
+        input:focus {
+            border-bottom: 3px inset grey; /* Focus border */
+        }
+
+        /*.container:hover{
+            width: 98%;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" autofocus title="First Name">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" title="Last Name">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="" selected hidden>Select Country...</option>
+                <option value="">India</option>
+                <option value="">Australia</option>
+                <option value="">US</option>
+                <option value="">UK</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
