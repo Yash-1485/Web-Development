@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qb 322</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border: 1px solid grey;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid grey;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            animation: test 5s ease infinite alternate 2s;
+        }
+
+        @keyframes test {
+            0% {
+                top: 10px;
+                left: 10px;
+            }
+
+            25% {
+                background-color: red;
+                top: 10px;
+                left: 290px;
+            }
+
+            50% {
+                background-color: blue;
+                top: 290px;
+                left: 290px;
+            }
+
+            100% {
+                background-color: yellow;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Write down HTML/CSS code that will change both the background-color
+and the position of the element when the animation is 25% complete, 50%
+complete, and again when the animation is 100% complete also has a 2
+seconds delay before starting the animation. -->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
