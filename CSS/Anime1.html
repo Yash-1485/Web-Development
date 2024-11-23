@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 1</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .toggleswitch{
+            display: inline-block;
+            width: 120px;
+            height: 70px;
+            background-color: #d2d2d2;
+            border-radius: 200px;
+            cursor: pointer;
+            position: relative;
+            background-image: linear-gradient(yellow 20%,white 40%,skyblue 40%);            
+            transition: all 0.5s ease-in;
+            border: 2px inset grey;
+        }
+
+        .toggleswitch::before{
+            content: '';
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all 0.4s ease-out;
+            transform: scale(1);
+            border: 1px ridge black;
+            /*box-shadow: 2px 2px 2px 2px grey;*/
+        }
+
+        /*.toggleswitch:hover::before{
+            transform: scale(1);
+        }*/
+        #toggle{
+            display: none;
+        }
+        #toggle:checked + .toggleswitch::before{
+            left: 55px;
+            /*box-shadow: -2px -2px 2px 2px grey;*/
+            /*background-image: linear-gradient(blue,black);*/
+        }
+        #toggle:checked + .toggleswitch{
+            /*background-image: linear-gradient(orange,red,yellow);*/
+            background-image: linear-gradient(black 20%,white 40%,blue 40%);
+        }
+        .check{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: white;
+            border: 1px solid;
+            margin-left: 10px;
+            /*visibility: hidden;*/
+            background-image: linear-gradient(yellow 20%,white 40%,skyblue 40%);
+        }
+        #toggle:checked ~ .check{
+            background-image: linear-gradient(black 20%,white 40%,blue 40%);
+            /*visibility: visible;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" name="toggle" id="toggle">
+        <label for="toggle" id="switch" class="toggleswitch"></label>
+        <div class="check"></div>
+    </div>
+</body>
+</html>
