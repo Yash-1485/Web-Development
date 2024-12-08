@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 16</title>
+    <style>
+        .container{
+            display: inline-block;
+        }
+
+        .text{
+            font-size: 50px;
+            font-family: monospace;
+            border-right: 4px solid black;
+            width: 100%;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 5s steps(18),
+                       cursor .5s step-end infinite alternate;
+        }
+
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+        @keyframes cursor{
+            50%{border-color: transparent;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">Typewriter Effect.</div>
+    </div>
+</body>
+</html>
