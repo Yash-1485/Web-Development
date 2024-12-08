@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 14</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 300px;
+            background-color: navy;
+            z-index: -1;
+            position: relative;
+        }
+
+        .box{
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(windows.png);
+            width: 50px;
+            height: 50px;
+            z-index: 100;
+            /*padding: 5px;
+            border: 1px solid;*/
+            animation: windowsx 3s infinite linear alternate,windowsy 4s linear infinite alternate;
+            position: absolute;
+        }
+
+        @keyframes windowsx{
+            from{
+                left: 0px;
+            }
+            to{
+                left: 350px;
+            }
+        }
+        @keyframes windowsy{
+            from{
+                top: 0px;
+            }
+            to{
+                top: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

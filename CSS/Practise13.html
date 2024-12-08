@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 13</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 99.5%;
+            height: 350px;
+            position: relative;
+            background-color: beige;
+            border: 1px solid;            
+        }
+
+        .ball{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px black;
+            position: absolute;
+            bottom: 0px;
+            animation: x linear 3s infinite alternate,y ease-out 1s infinite alternate;
+        }
+
+        @keyframes x {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 97.5%;
+            } 
+        }
+
+        @keyframes y{
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 150px;
+            }
+        }
+
+        /*@keyframes x{
+            0%{
+                left: 0px;
+            }
+            12.5%{
+                left: 50px;
+            }
+            25%{
+                left: 100px;
+            }
+            37.5%{
+                left: 150px;
+            }
+            50%{
+                left: 200px;
+            }
+            62.5%{
+                left: 250px;                
+            }
+            75%{
+                left: 300px;
+            }
+            87.5%{
+                left: 350px;
+            }
+            100%{
+                left: 400px;
+            }
+        }
+
+        @keyframes y{
+            0%{
+                bottom: 0px;
+            }
+            12.5%{
+                bottom: 100px;
+            }
+            25%{
+                bottom: 0px;
+            }
+            37.5%{
+                bottom: 100px;
+            }
+            50%{
+                bottom: 0px;
+            }
+            62.5%{
+                bottom: 100px;
+            }
+            75%{
+                bottom: 0px;
+            }
+            87.5%{
+                bottom: 100px;
+            }
+            100%{
+                bottom: 0px;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
