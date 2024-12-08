@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise 13</title>
+    <style>
+        .container{
+            width: fit-content;
+            height: fit-content;
+            /* margin: auto; */
+            border: 1px solid;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            animation: flag 3s ease 1 normal;
+        }
+
+        .flag {
+            width: 600px;
+            height: 100px;
+            /* position: relative; */
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .white{
+            background-color: white;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        @keyframes flag{
+            from{
+                top: 10px;
+                left: -50vw;
+            }to{
+                top: 10px;
+                left: 0vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flag orange"></div>
+        <div class="flag white"></div>
+        <div class="flag green"></div>
+    </div>
+</body>
+
+</html>
