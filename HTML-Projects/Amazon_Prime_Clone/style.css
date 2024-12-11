@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    width: auto;
+    height: 80vh;
+    background-color: black;
+    /* border: 2px solid white; */
+    position: relative;
+    overflow: clip;
+}
+
+/* Welcome Section */
+.welcome-section{
+    background-image: url(assets/images/bgimg1.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome-img-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.1);
+}
+
+/* .welcome-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+} */
+
+
+div.welcome-outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    filter: blur(15px);
+}
+
+/* Movie Rental Section */
+.movie-rental-section{
+    background-image: url(assets/images/bgimg2.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.movie-outer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52%;
+    height: 101%;
+    background-color: black;
+    z-index: 10;
+    filter: blur(5px);
+}
+
+.movie-img-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.1);
+}
+
