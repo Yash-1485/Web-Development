@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: 2px solid black;            
+        }
+        .container{
+            display: grid;
+            grid-template-areas: "header header header"
+                                  "menu main right"
+                                  "menu footer footer";
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 33.3vh 33.3vh 33.3vh;
+        }
+
+        .items{
+            text-align: center;
+            align-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            font-weight: 900;
+            /* border: 2px solid; */
+        }
+
+        .item-1{
+            background-color: grey;            
+            grid-area: header;
+            /* height: 35vh */
+        }
+
+        .item-2{
+            /* height: 65vh; */
+            background-color: navy;
+            grid-area: menu;
+        }
+
+        .item-3{
+            background-color: yellow;
+            grid-area: main;
+        }
+
+        .item-4{
+            background-color: green;
+            grid-area: right;
+        }
+
+        .item-5{
+            background-color: grey;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">Header</div>
+        <div class="items item-2">Menu</div>
+        <div class="items item-3">Main</div>
+        <div class="items item-4">right</div>
+        <div class="items item-5">Footer</div>
+    </div>
+</body>
+</html>
