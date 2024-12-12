@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --footer-color-1: 
+    rgb(144, 223, 254);
+    --footer-color-2: rgb(129, 151, 164);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -87,7 +93,7 @@ div.welcome-text{
 .wltext3>a{
     display: inline-block;
     margin-top: 40px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 1px;
     color: rgb(20, 17, 17);
@@ -164,7 +170,7 @@ div.movie-text{
 .mvtext3>a{
     display: inline-block;
     margin-top: 40px;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 1px;
     color: rgb(20, 17, 17);
@@ -179,4 +185,143 @@ div.movie-text{
 .mvtext3>a:hover{
     transform: scale(1.05);
     color: rgba(20, 17, 17, 0.65);
+}
+
+/* Subscription Section */
+.subscription-section{
+    /* background-image: url(assets/images/bgimg2.jpg); */
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+div.subscription-outer{
+    position: absolute;
+    left: -2%;
+    top: -2%;
+    width: 54%;
+    height: 104%;
+    background-color: black;
+    z-index: 1;
+    filter: blur(5px);
+}
+
+.subscription-img-container{
+    box-sizing: border-box;
+    padding: 30px;
+    padding-left: 0%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.1);
+    display: grid;
+    grid-template-areas: "item11 item12 item13"
+                         "item21 item22 item23"
+                         "item31 item32 item33";
+    gap: 0px 0px;
+    max-width: 100%;
+} 
+
+.subscription-img-container>a>img:hover{
+    /* border: 5px solid rgba(255, 255, 255, 0.55); */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.77);
+}
+
+.item{
+    transition: all 0.3s;
+    width: 94%;
+    height: 92%;
+    border-radius: 10px;
+    border: 1px solid white;
+    max-width: 100%;
+}
+
+.item1{
+    grid-area: 'item11';
+}
+.item2{
+    grid-area: 'item12';
+}
+.item3{
+    grid-area: 'item13';
+}
+.item4{
+    grid-area: 'item21';
+}
+.item5{
+    grid-area: 'item22';
+}
+.item6{
+    grid-area: 'item23';
+}
+.item7{
+    grid-area: 'item31';
+}
+.item8{
+    grid-area: 'item32';
+}
+.item9{
+    grid-area: 'item33';
+}
+
+div.subscription-text{
+    padding: 70px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    z-index: 10;
+    color: white;
+    overflow: hidden;
+}
+
+.sbtext1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 56px;
+}
+
+.sbtext2{
+    margin-top: 70px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+/* Footer Section */
+footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo>img{
+    width: 120%;
+}
+
+.ftline1>a{
+    display: inline-block;
+    padding-left: 18px;
+    text-decoration: none;
+    color: var(--footer-color-1);
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+.ftline2{
+    color: var(--footer-color-2);
+    font-size: large;
+    letter-spacing: 1px;
 }
