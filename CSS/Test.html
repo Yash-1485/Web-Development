@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            filter: blur(10px);
+            overflow: auto;
+        }
+
+        .con{
+            z-index: 1;
+            position: absolute;
+        }
+
+        .text{
+            font-size: 20px;
+            color: red;
+            filter: blur(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eveniet?
+        </div>
+    </div>
+    <div class="container">        
+    </div>
+</body>
+</html>

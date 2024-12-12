@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins",Arial, Helvetica, sans-serif; */
+    font-family: "PT Sans", sans-serif;
 }
 
 .container{
@@ -19,6 +24,7 @@
     background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .welcome-img-container{
@@ -41,13 +47,61 @@
 
 div.welcome-outer{
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 52%;
-    height: 100%;
+    left: -2%;
+    top: -2%;
+    width: 54%;
+    height: 104%;
     background-color: black;
     z-index: 1;
-    filter: blur(15px);
+    filter: blur(15px);    
+}
+
+div.welcome-text{
+    padding: 40px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    z-index: 10;
+    color: white;
+    overflow: hidden;
+}
+
+.wltext1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 56px;
+}
+
+.wltext2{
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.wltext3>a{
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(20, 17, 17);
+    background-color: white;
+    text-decoration: none;
+    padding: 20px 15px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.wltext3>a:hover{
+    transform: scale(1.05);
+    color: rgba(20, 17, 17, 0.65);
 }
 
 /* Movie Rental Section */
@@ -56,16 +110,17 @@ div.welcome-outer{
     background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 div.movie-outer{
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 52%;
-    height: 101%;
+    left: -2%;
+    top: -2%;
+    width: 54%;
+    height: 104%;
     background-color: black;
-    z-index: 10;
+    z-index: 1;
     filter: blur(5px);
 }
 
@@ -78,3 +133,50 @@ div.movie-outer{
     background-color: rgba(0, 0, 0,0.1);
 }
 
+div.movie-text{
+    padding: 40px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    z-index: 10;
+    color: white;
+    overflow: hidden;
+}
+
+.mvtext1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 56px;
+}
+
+.mvtext2{
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.mvtext3>a{
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(20, 17, 17);
+    background-color: white;
+    text-decoration: none;
+    padding: 20px 15px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    border: none;
+}
+
+.mvtext3>a:hover{
+    transform: scale(1.05);
+    color: rgba(20, 17, 17, 0.65);
+}
