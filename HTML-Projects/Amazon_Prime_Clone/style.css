@@ -14,6 +14,94 @@
     font-family: "PT Sans", sans-serif;
 }
 
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-between;    
+    /* position: sticky;
+    top: 0; */
+}
+
+.nav {
+    padding: 30px 120px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-item {
+    padding-right: 20px;
+    flex-shrink: 0;
+}
+
+.nav-item>img {
+    width: 140px;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;    
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.join-prime{
+    background-color: var(--footer-color-1);
+}
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link:hover:not(.search):not(.join):not(.account) {
+    color: black;
+    background-color: white;
+}
+
+.search:hover {
+    border-radius: 100%;
+    color: black;
+    background-color: white;
+}
+
+.search:hover>svg{
+    fill: black;
+}
+
+.account:hover {
+    border-radius: 100%;
+    color: black;
+    background-color: white;
+}
+
+.account:hover>svg{
+    fill: black;
+}
+
+.join {
+    opacity: 0.8;
+}
+
+.join:hover {
+    opacity: 1;
+    box-sizing: 0px 0px 10px white;
+}
+
+@media all and (orientation:potrait) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
 .container{
     display: flex;
     width: auto;
@@ -235,7 +323,7 @@ div.subscription-outer{
     width: 94%;
     height: 92%;
     border-radius: 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     max-width: 100%;
 }
 
