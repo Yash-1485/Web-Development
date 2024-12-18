@@ -71,6 +71,10 @@ nav{
     color: var(--main);
 }
 
+.logo{
+    font-size: xx-large;
+}
+
 /* Home Section */
 /* Home Info Section */
 .home{    
