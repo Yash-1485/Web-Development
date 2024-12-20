@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+    <!-- CDN - Content Delivery Network -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+        <div class="accordian" id="myacc">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#" class="card-link" data-toggle="collapse" data-target="#c1">Question 1</a>
+                </div>
+                <div class="collapse" id="c1" data-parent="#myacc">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id molestias eveniet vel adipisci
+                            facere hic iste aperiam cum dolorem eum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#" class="card-link" data-toggle="collapse" data-target="#c2">Question 2</a>
+                </div>
+                <div class="collapse" id="c2" data-parent="#myacc">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nostrum in obcaecati.
+                            Rerum magnam alias, aliquid odit corporis earum unde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#" class="card-link" data-toggle="collapse" data-target="#c3">Question 3</a>
+                </div>
+                <div class="collapse" id="c3" data-parent="#myacc">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nostrum in obcaecati.
+                            Rerum magnam alias, aliquid odit corporis earum unde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#" class="card-link" data-toggle="collapse" data-target="#c4">Question 4</a>
+                </div>
+                <div class="collapse" id="c4" data-parent="#myacc">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nostrum in obcaecati.
+                            Rerum magnam alias, aliquid odit corporis earum unde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 text-center">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#c">વધારે વાંચો</button>
+        <div class="collapse" id="c">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat voluptas illum ipsa culpa dolor
+                repellendus ex praesentium officia quae, accusantium commodi aut? In impedit sit quibusdam totam, aut
+                eius saepe sunt, magni, harum cumque sint error aliquid accusantium ullam nemo delectus obcaecati ex
+                dicta similique cum iure exercitationem amet quas? Fugit ab consequuntur quibusdam at officia expedita
+                quidem incidunt similique facere, itaque praesentium asperiores eum cupiditate qui in dolorum culpa
+                placeat fuga dolores cumque magni architecto! Nemo, natus quam doloribus ducimus culpa placeat accusamus
+                itaque. Cumque cupiditate error itaque recusandae necessitatibus? Animi nihil, nulla non ipsam
+                praesentium quibusdam ratione.
+            </p>
+        </div>
+
+        <div class="container mt-5">
+            <div class="dropdown" id="dp">
+                <button type="button" class="btn btn-primary" data-toggle="dropdown" data-target="#dp">Dropdown</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
