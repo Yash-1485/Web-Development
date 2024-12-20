@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Loading</title>
+    <style>
+        :root{
+            --bg-color: #EAE7DC;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{                        
+            background-color: var(--bg-color);
+        }
+
+        .loading{
+            height: 100vh;
+            width: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation: nonedisplay 6s forwards;
+        }
+
+        @keyframes nonedisplay {
+            100%{
+                display: none;
+            }
+        }
+
+        .load-outer{
+            position: absolute;
+            width: 19%;
+            height: 7%;
+            /* border: 1px solid; */
+            border-radius: 20px;
+            padding: 20px 30px;
+            background-color: brown;
+            z-index: -1;
+
+            animation: loading 5s alternate ease forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes loading {
+            0%{
+                transform: translateX(0);
+            }
+            35%{
+                transform: translateX(50%);
+            }
+            75%{
+                transform: translateX(-50%);
+            }
+            100%{
+                transform: translateX(0);
+                border-radius: 15px;
+                height: 1%;
+                width: 23%;
+            }
+        }
+
+        .load{
+            position: relative;
+            background-color: var(--bg-color);
+            font-size: x-large;
+            letter-spacing: 1.5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            color: brown;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="load">Loading...</div>
+        <div class="load-outer"></div>
+    </div>
+
+    <div class="container">
+        <h1>
+            Hello World!
+        </h1>
+    </div>
+</body>
+</html>
