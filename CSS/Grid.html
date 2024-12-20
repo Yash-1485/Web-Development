@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            padding: 10px;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-areas: "header header header header"
+                                 "menu menu main right"
+                                 "menu menu footer footer";
+            gap: 5px;
+        }
+
+        .box{
+            text-align: center;
+            border: 2px solid black;
+            background-color: rgb(48, 48, 121);
+            color: white;
+            font-size: xx-large;
+            font-family: 'Courier New', Courier, monospace;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            grid-area: header;
+        }
+
+        .main{
+            grid-area: main;
+        }
+
+        .menu{
+            grid-area: menu;
+        }
+
+        .right{
+            grid-area: right;
+        }
+
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header box">Header</div>
+        <div class="main box">Main</div>
+        <div class="menu box">Menu</div>
+        <div class="right box">Right</div>
+        <div class="footer box">Footer</div>
+    </div>
+</body>
+</html>
