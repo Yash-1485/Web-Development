@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: radial-gradient(50% 100% at 50% 0%, rgba(44, 66, 156, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+    font-family: "Poppins","Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.main-section{
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container{
+    max-width: 100%;
+    height: auto;
+    /* max-height: 100vh;     */
+}
+
+/* movie section */
+.movie-section{
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    /* margin: 10px; */
+}
+
+.movie-section-child{
+    display: flex;
+    gap: 15px;
+}
+
+.title{
+    color: rgba(255, 255, 255, 0.850);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    /* padding: 35px 185px; */
+    align-self: flex-start;
+}
+
+.movie{
+    width: 240px;
+    height: 335px;
+    /* border: 1px solid white; */
+    border-radius: 18px;
+    background-repeat: no-repeat;    
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.3s linear;
+}
+
+.movie:hover{
+    z-index: 10;
+    transform: scale(1.08);
+}
+
+.movie1{
+    background-image: url(assets/images/movies/m1.webp);
+}
+.movie2{
+    background-image: url(assets/images/movies/m2.webp);
+}
+.movie3{
+    background-image: url(assets/images/movies/m3.webp);
+}
+.movie4{
+    background-image: url(assets/images/movies/m4.webp);
+}
+.movie5{
+    background-image: url(assets/images/movies/m5.webp);
+}
+.movie6{
+    background-image: url(assets/images/movies/m6.webp);
+}
+.movie7{
+    background-image: url(assets/images/movies/m7.webp);
+}
+.movie8{
+    background-image: url(assets/images/movies/m8.webp);
+}
+.movie9{
+    background-image: url(assets/images/movies/m9.webp);
+}
+.movie10{
+    background-image: url(assets/images/movies/m10.webp);
+}
+.movie11{
+    background-image: url(assets/images/movies/m11.webp);
+}
+.movie12{
+    background-image: url(assets/images/movies/m12.webp);
+}
+
+/* FAQs Section */
+.faq-section{
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+}
+
+ul.join{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.min-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+ul.join li{
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    height: 120px;
+    border: 2px solid rgba(128, 128, 128, 0.559);
+    border-radius: 18px;
+    background-color: rgb(42, 41, 41);
+}
+
+.innerlogo{
+    display: inline-block;
+}
+
+ul.join li:nth-child(1) .innerlogo{
+    width: 50px;
+    height: auto;
+    background-image: url(assets/images/li1.png);
+}
