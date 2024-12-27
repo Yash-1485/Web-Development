@@ -11,14 +11,18 @@
 
 <body>
     <div class="container-fluid mt-2">
-        <form action="#" method="get">
+        <form action="#" method="get" class="was-validated">
             <fieldset>
                 <legend>
                     Form
                 </legend>
 
-                <label for="fname" class="form-label">First Name: </label>
-                <input type="text" name="fname" id="fname" class="form-control">
+                <div>
+                    <label for="fname" class="form-label">First Name: </label>
+                    <input type="text" name="fname" id="fname" class="form-control" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
 
                 <label for="lname" class="form-label">Last Name: </label>
                 <input type="text" name="lname" id="lname" class="form-control-plaintext">

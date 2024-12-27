@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pr2</title>
+    <!-- CDN - Content Delivery Network -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-2">
+        <img src="/Bootstrap/images/pexels-muffin-2468773.jpg" alt="" class="img-fluid">
+    </div>
+
+    <div class="container">
+        <ol class="list-unstyled">
+            <li><a href="#" class="text-primary font-weight-bolder display-4 text-decoration-none">Google</a></li>
+            <li><button type="button" class="btn btn-primary btn-block"></button></li>
+            <li></li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <ul class="pagination pagination-lg justify-content-end">
+            <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+    </div>
+
+    <div class="container text-center">
+        <div class="dropdown dropright">
+            <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+            <div class="dropdown-menu">
+                <strong class="dropdown-header">Header</strong>
+                <a href="#" class="dropdown-item">item1</a>
+                <a href="#" class="dropdown-item">item2</a>
+                <a href="#" class="dropdown-item">item3</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-item-text">Hello</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container d-flex flex-wrap-reverse bg-primary">
+            <div class="bg-danger p-4">3</div>
+            <div class="bg-warning p-4">1</div>
+            <div class="bg-secondary p-4">2</div>
+            <div class="bg-warning p-4">1</div>
+            <div class="bg-secondary p-4">2</div>
+            <div class="bg-danger order-1 p-4">120</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="nav nav-pills nav-tabs nav-justified">
+            <li class="nav-item"><a href="#l1" data-toggle="pill" class="nav-link active">link</a></li>
+            <li class="nav-item"><a href="#l2" data-toggle="pill" class="nav-link">link</a></li>
+            <li class="nav-item dropdown">
+                <a href="#l3" data-toggle="pill" class="nav-link dropdown-toggle" data-toggle="dropdown">link</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">link</a>
+                    <a href="#" class="dropdown-item">link</a>
+                    <a href="#" class="dropdown-item">link</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#l4" data-toggle="pill" class="nav-link">link</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active fade show" id="l1">
+                1
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est natus repellat amet itaque aliquid reprehenderit cupiditate dignissimos incidunt velit nam, dolore aspernatur quidem consequuntur fugit rerum consequatur possimus, sint necessitatibus eaque non iste sit blanditiis. Nobis fuga ipsa assumenda expedita inventore nostrum culpa aliquam in dolore architecto exercitationem, totam tempore.
+            </div>
+            <div class="tab-pane fade" id="l2">
+                2
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est natus repellat amet itaque aliquid reprehenderit cupiditate dignissimos incidunt velit nam, dolore aspernatur quidem consequuntur fugit rerum consequatur possimus, sint necessitatibus eaque non iste sit blanditiis. Nobis fuga ipsa assumenda expedita inventore nostrum culpa aliquam in dolore architecto exercitationem, totam tempore.
+            </div>
+            <div class="tab-pane fade" id="l3">
+                3
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est natus repellat amet itaque aliquid reprehenderit cupiditate dignissimos incidunt velit nam, dolore aspernatur quidem consequuntur fugit rerum consequatur possimus, sint necessitatibus eaque non iste sit blanditiis. Nobis fuga ipsa assumenda expedita inventore nostrum culpa aliquam in dolore architecto exercitationem, totam tempore.
+            </div>
+            <div class="tab-pane fade" id="l4">
+                4
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est natus repellat amet itaque aliquid reprehenderit cupiditate dignissimos incidunt velit nam, dolore aspernatur quidem consequuntur fugit rerum consequatur possimus, sint necessitatibus eaque non iste sit blanditiis. Nobis fuga ipsa assumenda expedita inventore nostrum culpa aliquam in dolore architecto exercitationem, totam tempore.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
