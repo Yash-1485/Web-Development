@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-2">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link">Prev</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link active">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item disabled">
+                <a href="#" class="page-link disabled">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">Next</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container mt-2 mb-2">
+        <div class="row border border-dark mt-2">
+            <div class="col-4">
+                <div class="text-center">
+                    <img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt="" data-toggle="collapse"
+                        data-target="#p1" class="d-block w-100">
+                    <p id="p1" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias
+                        expedita sequi fugit facere harum porro, culpa unde repellat fugiat!</p>
+                </div>
+            </div>
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+        </div>
+        <div class="row border border-dark mt-2">
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+        </div>
+        <div class="row border border-dark mt-2">
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+            <div class="col-4"><img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt=""
+                    class="d-block w-100"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container-fluid text-center bg-light py-5">
+        <h1>Welcome to Beauty Bazaar</h1>
+        <p>Your one-stop shop for premium beauty products</p>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container my-5" id="products">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <!-- Product Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="/Bootstrap/images/JS-Logo.png" class="card-img-top" alt="Lipstick">
+                    <div class="card-body">
+                        <h5 class="card-title">Matte Lipstick</h5>
+                        <p class="card-text">A rich and long-lasting matte finish for your perfect pout.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="/Bootstrap/images/CSS-Logo.png" class="card-img-top" alt="Foundation">
+                    <div class="card-body">
+                        <h5 class="card-title">Liquid Foundation</h5>
+                        <p class="card-text">Achieve flawless coverage with our liquid foundation.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="/Bootstrap/images/HTML5_logo.png" class="card-img-top" alt="Eyeshadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Eyeshadow Palette</h5>
+                        <p class="card-text">Create stunning looks with our versatile eyeshadow palette.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    </footer>
+
+    <div class="container-fluid mt-2 mb-2">
+        <div class="row text-center">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="card-body">
+                        <p>Price</p>
+                        <p>Features</p>
+                        <p>Quantity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="card-body">
+                        <p>Price</p>
+                        <p>Features</p>
+                        <p>Quantity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="card-body">
+                        <p>Price</p>
+                        <p>Features</p>
+                        <p>Quantity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="/Bootstrap/images/pexels-eberhardgross-3389532.jpg" alt="" class="d-block w-100">
+                    </div>
+                    <div class="card-body">
+                        <p>Price</p>
+                        <p>Features</p>
+                        <p>Quantity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2 mb-2 text-center">
+        <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="collapse" data-target="#mycollapse">
+            Open Collapse
+        </button>
+        <div class="collapse" id="mycollapse">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolores nulla consectetur natus accusamus,
+                voluptates error corporis ut repellendus, necessitatibus, nam animi. Laboriosam et quas, sint aut error
+                tenetur eos magnam fuga exercitationem impedit similique ipsam unde assumenda officiis. Incidunt dolores
+                beatae in nostrum fugiat placeat dolorem autem cumque a.</p>
+        </div>
+    </div>
+
+    <div class="container mt-5 b-5">
+        <div class="row text-center">
+            <div class="col-4">
+                <p class="text-primary bg-light">Lorem, ipsum.</p>
+                <p class="text-secondary bg-light">Lorem, ipsum.</p>
+                <p class="text-info bg-light">Lorem, ipsum.</p>
+                <p class="text-warning bg-light">Lorem, ipsum.</p>
+                <p class="text-danger bg-light">Lorem, ipsum.</p>
+                <p class="text-success bg-light">Lorem, ipsum.</p>
+            </div>
+            <div class="col-8">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="width:30%;float:left" class="p-5">
+            40%
+            <div class="progress bg-white">
+                <div class="progress-bar progress-bar-primary" style="width: 40%;">
+                </div>
+            </div>
+        </div>
+        <div style="width:70%;float:left" class="p-5">
+            <div class="progress">
+                <div class="progress-bar progress-bar-secondary" style="width: 40%;">
+                    40%
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 border border-dark p-2">
+                <div class="progress bg-success rounded w-25" d> </div>WhatsAPP
+                <div class="progress bg-danger rounded w-25" d> </div>Instagram
+                <div class="progress bg-warning rounded w-25" d> </div>Facebook
+            </div>
+            <div class="col-sm-9 border border-dark p-2">
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:30%">
+                        30%
+                    </div>
+                </div>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:20%">20%
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:40%">
+                        40%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 20%;">20%
+            </div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%;">20%</div>
+        </div>
+        <div class="container mt-3">
+            11111<div class="progress bg-primary rounded" style="width: 25px; height: 25px;"></div>
+            22222<div class="progress bg-warning rounded" style="width: 25px; height: 25px;"></div>
+            33333<div class="progress bg-danger rounded" style="width: 25px; height: 25px;"></div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row mt-2">
+            <div class="col-sm-6 border border-secondary">
+                <h1>Title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere facilis accusamus maiores soluta!
+                    Numquam voluptatem voluptate doloribus officia nemo maiores.</p>
+            </div>
+            <div class="col-sm-6 border border-secondary">
+                <dl>
+                    <dt>Df1</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi?</dd>
+
+                    <dt>Df1</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi?</dd>
+
+                    <dt>Df1</dt>
+                    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi?</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Heading Section -->
+        <div class="section-heading">
+            <h1>Beautiful Nature Images</h1>
+        </div>
+
+        <!-- Description Section -->
+        <div class="section-description">
+            <p>
+                Explore some of the most breathtaking nature images from around the world.
+                Each link below will guide you to search and discover stunning visuals that showcase the beauty of
+                nature.
+            </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="section-links">
+            <h5>Search Images:</h5>
+            <a href="https://www.google.com/search?q=nature+landscapes&tbm=isch" target="_blank"
+                class="btn btn-primary btn-sm">
+                Landscapes
+            </a>
+            <a href="https://www.google.com/search?q=forest+scenes&tbm=isch" target="_blank"
+                class="btn btn-success btn-sm">
+                Forests
+            </a>
+            <a href="https://www.google.com/search?q=ocean+views&tbm=isch" target="_blank" class="btn btn-info btn-sm">
+                Oceans
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
