@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #111;
+}
+
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: beige;    
+}
+
+#box2{
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
