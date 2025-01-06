@@ -15,7 +15,13 @@ body{
     background-color: #111;
 }
 
-#box1{
+/* #box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+} */
+
+/* #box1{
     height: 300px;
     width: 300px;
     background-color: beige;    
@@ -27,8 +33,30 @@ body{
     background-color: lightblue;
 }
 
-#box{
+#box3{
     height: 300px;
     width: 300px;
     background-color: crimson;
+} */
+
+.nav{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+    font-weight: 600;
+}
+
+.nav-part{
+    display: flex;
+    font-size: large;
+    gap: 70px;
+}
+
+.main>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
 }
