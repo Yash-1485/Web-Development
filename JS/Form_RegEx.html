@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_RegEx</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html,body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #222;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("bgimg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+        }
+
+        input,button,label{
+            display: block;
+            width: 100%;
+        }
+
+        
+        input{
+            color: #222;
+            background-color: rgb(199, 191, 191);
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        button{
+            background-color: #222;
+            color: #fff;
+            border-radius: 0.5rem;
+            margin-top: 0.4rem;
+            padding: 10px;
+        }
+        
+        label{
+            color: #fff;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        form{
+            width: 25%;
+            height: fit-content;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 5px;
+            padding: 10px;
+            background: transparent;
+            z-index: 1;
+        }
+
+        #validation{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <form action="">
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname">
+        <div id="usernameValidation"></div>
+        <button type="button" onclick="validateUsername()">Validate</button>
+
+        <label for="pwd">Password:</label>
+        <input type="text" name="pwd" id="pwd">
+        <div id="validation2"></div>
+        <button type="button" onclick="validate()">Validate</button>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <div id="validation3"></div>
+        <button type="button" onclick="validate()">Validate</button>
+
+    </form>    
+    <script src="regex.js"></script>
+</body>
+</html>
