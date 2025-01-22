@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabe Pane</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 80vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* border: 1px solid; */
+        }
+
+        .tab_box{
+            /* border: 1px solid; */
+            box-shadow: 0 0 5px 2px grey;
+            border-radius: 1rem;
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+            background-color: #000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .tab_btn{
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;            
+            margin-right: 1rem;
+            background-color: #fff;
+            border: none;
+            box-shadow: 0 0px 1.5px 5px #fff;
+            border-radius: 10px;
+        }
+
+        .tab_box .tab_btn.active{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .content_box{
+            width: 100%;
+            border: 1px solid;
+            border-radius: 0 0 1rem 1rem;
+            padding: 1rem 2rem;
+            position: relative;
+            bottom: 0.8rem;
+            z-index: 1;
+            background-color: beige;
+        }
+
+        .content_box .content{
+            display: none;
+            animation: moving 0.1s ease-out;
+        }
+
+        @keyframes moving{
+            from{
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        .content_box .content.active{
+            display: block;
+        }
+
+        .content_box .content h2{
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tab_box">
+            <button type="button" class="tab_btn active">Home</button>
+            <button type="button" class="tab_btn">Blog</button>
+            <button type="button" class="tab_btn">About</button>
+            <button type="button" class="tab_btn">Content</button>
+        </div>
+        <div class="content_box">
+            <div class="content active">
+                <h2>Home</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus, libero maxime ipsa quos possimus ullam deserunt qui amet pariatur iure error quod temporibus dolores magni reiciendis ipsum accusamus similique!
+                </p>
+            </div>
+            <div class="content">
+                <h2>Blog</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus, libero maxime ipsa quos possimus ullam deserunt qui amet pariatur iure error quod temporibus dolores magni reiciendis ipsum accusamus similique!
+                </p>
+            </div>
+            <div class="content">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus, libero maxime ipsa quos possimus ullam deserunt qui amet pariatur iure error quod temporibus dolores magni reiciendis ipsum accusamus similique!
+                </p>
+            </div>
+            <div class="content">
+                <h2>Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repellendus, libero maxime ipsa quos possimus ullam deserunt qui amet pariatur iure error quod temporibus dolores magni reiciendis ipsum accusamus similique!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let tabs=document.querySelectorAll(".tab_btn")
+        let content=document.querySelectorAll(".content")
+
+        tabs.forEach((tab,idx)=>{
+            tab.addEventListener('click',()=>{
+                tabs.forEach(tab=>{
+                    tab.classList.remove("active")
+                })
+                tab.classList.add("active")
+
+                content.forEach(e=>{e.classList.remove("active")})
+                content[idx].classList.add("active")
+            })
+        })
+    </script>
+</body>
+</html>
