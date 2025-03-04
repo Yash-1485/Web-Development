@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Pointer Chaser</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .circle{
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 0, 0.73);
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle" id="circle"></div>
+    <span id="mouse"></span>
+    <script>
+        func=()=>{
+            x=event.clientX
+            y=event.clientY
+            let cursor=document.getElementById('circle')
+            cursor.style.left=x-15+"px"
+            cursor.style.top=y-15+"px"
+        }
+        window.addEventListener('mousemove',func)
+    </script>
+</body>
+</html>
