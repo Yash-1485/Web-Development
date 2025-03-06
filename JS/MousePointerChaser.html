@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Pointer Chaser</title>
+    <style>
+        .circle{
+        height: 24px;
+        width: 24px;
+        border-radius: 100%;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+    <div class='circle'></div>
+
+    <script>
+        const coords={x:0,y:0};
+        const circles=document.querySelectorAll('.circle')
+        const colors=['#b70c00','#c10020', '#c6003a', '#c50055', '#bd0073', '#aa0093', '#8c00b2','#b70c00','#c10020', '#c6003a', '#c50055', '#bd0073', '#aa0093', '#8c00b2']
+
+        circles.forEach(function(circle,index){
+            circle.x=0
+            circle.y=0
+            circle.style.backgroundColor=colors[index%colors.length]
+        })
+
+        window.addEventListener("mousemove",function(e){
+            coords.x=e.clientX
+            coords.y=e.clientY
+        })
+        
+        function animateCircles(){
+            let x=coords.x
+            let y=coords.y
+            
+            circles.forEach(function(circle,index){
+                circle.style.left=(x-12)+"px"
+                circle.style.top=(y-12)+"px"
+                circle.x=x
+                circle.y=y
+                circle.style.scale=(circles.length-index)/circles.length
+                
+                const nextCircle = circles[index+1]||circles[0]
+                x+=(nextCircle.x-x)*0.3
+                y+=(nextCircle.y-y)*0.3
+            });
+            requestAnimationFrame(animateCircles)
+        }
+        animateCircles()
+        </script>
+</body>
+</html>
