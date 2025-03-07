@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabpane</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 100vh;
+            /* background-color: #111; */
+        }
+
+        .container {
+            width: 700px;
+            height: 100%;
+            padding: 1rem 2rem;
+        }
+
+        .tabs {
+            border: 2px solid #4285F4;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 1rem;
+        }
+
+        .tabs .tab-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            border: 2px solid #4285F4;
+            overflow: hidden;
+        }
+
+        .tabs .tab-header .tab {
+            cursor: pointer;
+            border: none;
+            width: calc(100%/4);
+            height: 70px;
+            font-size: larger;
+            background-color: #4285F4;
+            display: block;
+            position: relative;
+            text-align: center;
+            line-height: 70px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .tabs .tab-header .tab::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 0%;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .tabs .tab-header .tab:hover::after {
+            height: 5px;
+        }
+
+        .tabs .tab-header .tab.active {
+            background-color: #fff;
+            color: #4285F4;
+        }
+
+        .tab-content>div {
+            margin-top: 1rem;
+            display: none;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 300ms ease-in-out;
+        }
+
+        .tab-content>div.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab-header">
+                <a class="tab">Home</a>
+                <a class="tab">Services</a>
+                <a class="tab">Blog</a>
+                <a class="tab">AboutUS</a>
+            </div>
+            <div class="tab-content">
+                <div id="home">
+                    <h2>This is Home Section</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                </div>
+                <div id="services">
+                    <h2>This is Services Section</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                </div>
+                <div id="blog">
+                    <h2>This is Blog Section</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                </div>
+                <div id="aboutus">
+                    <h2>This is AboutUS Section</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus corporis enim, incidunt sequi
+                        aliquam esse blanditiis culpa dicta quia ipsum recusandae dolore id, ad nemo in. Quo commodi
+                        neque deserunt itaque nostrum non error reiciendis voluptates vero corporis quis amet sint dicta
+                        voluptatibus alias eveniet ad explicabo, eaque impedit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content > div');
+
+        tabs.forEach((tab, idx) => {
+            tab.addEventListener('click', () => {
+                // Remove 'active' class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Hide all tab contents smoothly
+                tabContents.forEach(content => {
+                    content.classList.remove('active'); // Remove animation class
+                    content.style.opacity = '0'; // Start fade-out effect
+                    setTimeout(() => {
+                        content.style.display = 'none'; // Hide content after animation
+                    }, 300); // Match this duration with CSS transition time
+                });
+
+                // Show the selected tab content with fade-in effect
+                setTimeout(() => {
+                    tabContents[idx].style.display = 'block';
+                    setTimeout(() => {
+                        tabContents[idx].style.opacity = '1'; // Start fade-in effect
+                        tabContents[idx].classList.add('active'); // Add active class
+                    }, 10); // Small delay to trigger animation properly
+                }, 300);
+            });
+        });
+
+        // Set default active tab
+        tabs[0].classList.add('active');
+        tabContents[0].style.display = 'block';
+        tabContents[0].classList.add('active');
+        tabContents[0].style.opacity = '1';
+    </script>
+</body>
+
+</html>
