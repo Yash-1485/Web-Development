@@ -96,10 +96,11 @@
 
         @media (max-width: 650px){
             body{
-                padding: 0 1.5rem;
+                padding: 0 0.5rem;
             }
 
             .container{
+                padding: 0.5rem 0.25rem;
                 width: 100%;
             }
 
@@ -125,13 +126,25 @@
                 margin-left: 1rem;
                 font-size: 0.8rem;
             }
+
+            .tabs .tab-header .tab::after{
+                content: '';
+                position: absolute;
+                bottom: none;
+                left: 0px;
+                width: 0px;
+                height: 100%;
+                background-color: #fff;
+                transition: all 0.3s ease;
+            }
+
+            .tabs .tab-header .tab:hover::after {
+                height: 100%;
+                width: 5px;
+            }
         }
 
         @media (max-width: 500px){
-            body{
-                padding: 0 1.5rem;
-            }
-
             .container{
                 width: 100%;
             }
@@ -153,6 +166,11 @@
             .tabs .tab-header .tab{
                 width: 100%;
                 font-size: medium;
+            }
+
+            .tab-content>div{
+                margin-left: 0;
+                
             }
         }
     </style>
