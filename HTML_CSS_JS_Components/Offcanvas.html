@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            background-color: #111;
+            padding: 0.5rem 2rem;
+            color: #fff;
+        }
+
+        .navbar .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav .nav-item {
+            cursor: pointer;
+            list-style-type: none;
+            padding: 0.4rem;
+            position: relative;
+        }
+
+        .nav .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .nav .nav-item:hover::after {
+            width: 100%;
+        }
+
+        .nav .nav-item .nav-link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-collapse {
+            font-size: 1.8rem;
+            color: #fff;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                display: block;
+            }
+
+            .navbar .nav {
+                height: 100vh;
+                align-items: flex-end !important;
+                flex-direction: column;
+                position: absolute;
+                right: -200px;
+                top: 0px;
+                background-color: #111;
+                z-index: -1;
+                transition: all 0.3s cubic-bezier(0.84, 0.07, 0.21, 1);
+            }
+
+            .nav .nav-item {
+                width: 200px;
+                text-align: left;
+                padding-left: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav-logo">
+                <h1>Logo</h1>
+            </div>
+            <ul class="nav" id="nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">AboutUs</a></li>
+            </ul>
+            <div class="navbar-collapse" id="navCollapse">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+        const navCollapse = document.getElementById('navCollapse')
+
+        navCollapse.addEventListener('click', () => {
+            if (navCollapse.classList.contains('active')) {
+                navCollapse.classList.remove('active')
+                nav.style.right = `-200px`
+            } else {
+                navCollapse.classList.add('active')
+                nav.style.right = `0px`
+            }
+        })
+    </script>
+</body>
+
+</html>
