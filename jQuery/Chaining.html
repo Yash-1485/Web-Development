@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining</title>
+</head>
+<body>
+    
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, hic asperiores? Veniam libero quos repellat error delectus quam consectetur nobis!</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#p1").css("color", "red")
+            //     .slideUp(2000)
+            //     .slideDown(2000);
+            $("#p1").css({color: "red",fontSize: '1.5rem'}).slideUp(2000).slideDown(2000);
+        });
+    </script>
+</body>
+</html>

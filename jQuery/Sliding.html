@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            cursor: pointer;
+            width: 90%;
+            margin: auto;
+            display: block;
+            font-size: larger;
+            text-align: center;
+            background-color: #ddd;
+            border: 1px solid;
+            margin-top: 1rem;
+        }
+
+        .container{
+            padding: 1.5rem;            
+        }
+
+        .para{
+            font-size: 60px;
+            color: #fff;
+            background-color: grey;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <a id="slideUp">Click Here to Slide Up</a>
+    <a id="slideDown">Click Here to Slide Down</a>
+    <a id="slideToggle">Click Here to Slide Toggle</a>
+
+    <div class="container">
+        <p class="para" id="para">
+            Hello World!
+        </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var para=$('#para');
+            $('#slideUp').click(function(){
+                para.slideUp('slow')
+            });
+            $('#slideDown').click(function(){
+                para.slideDown(3000)
+            });
+            $('#slideToggle').click(function(){
+                para.slideToggle('slow')
+            });
+        });
+    </script>
+</body>
+</html>

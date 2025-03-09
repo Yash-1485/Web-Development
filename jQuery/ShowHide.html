@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHide</title>
+</head>
+<body>
+    
+    <button type="button" id="show">Show Paragraph</button>
+    <button type="button" id="hide">Hide Paragraph</button>
+
+    <p id="para1">Para1 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, dolor?</p>
+    
+    <button type="button" id="toggle">Toggle - Show/Hide Paragraph</button>
+    <p id="para2">Para2 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, dolor?</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            var para1=$('#para1');
+            var para2=$('#para2');
+            $('#show').click(function(){
+                para1.show('slow')
+            });
+            $('#hide').click(function(){
+                para1.hide(2000)
+            });
+            $('#toggle').click(function(){
+                para2.toggle('slow')
+            });
+       }); 
+    </script>
+</body>
+</html>

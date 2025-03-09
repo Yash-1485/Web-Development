@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div{
+            width: 250px;
+            height: 250px;
+            border: 1px solid;
+            background-color: salmon;
+        }
+
+        button{
+            padding: 1rem 2rem;
+            font-size: x-large;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <button type="button" id="show">Show</button>
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="toggle">Toggle</button>
+
+    <div class="container">
+        <div id="div1" class="div"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var div1=$('#div1');
+
+            $('#show').click(function(){
+                div1.animate({width: "250px"});
+                div1.animate({opacity: 1});
+            });
+            $('#hide').click(function(){
+                div1.animate({opacity: 0.35});
+                div1.animate({width:'0px'});
+            });
+            $('#toggle').click(function(){
+                div1.animate({height:'toggle',width: 'toggle'});
+            });
+        });
+    </script>
+</body>
+</html>
