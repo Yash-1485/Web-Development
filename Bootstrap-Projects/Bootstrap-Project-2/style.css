@@ -1,0 +1,71 @@
+:root{
+    /* --bg-gradient-main: linear-gradient(to right, #1a2a6c,#b21f1f,#fdbb2d); */
+    --bg-gradient-main: linear-gradient(to right,#222 , #5C258D, #4389A2, #333);
+    --bg-gradient-primary: linear-gradient(to right, #C33764, #1D2671);
+    --bg-gradient-secondary: linear-gradient(to right, #780206, #061161);
+
+    --card-odd: linear-gradient(to right, #283048, #859398);
+    --card-even: linear-gradient(to right, #16222A, #3A6073);
+    --transition: all 0.3s ease;
+}
+
+body{
+    background: var(--bg-gradient-main) !important;
+}
+
+.btn{
+    transition: var(--transition);
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/* Navbar Styles */
+.dropdown-item{
+    transition: var(--transition) !important;
+}
+.dropdown-item:hover{
+    color: #fff !important;
+    background: var(--bg-gradient-main) !important;
+}
+
+/* Main Section */
+/* Hero Section */
+.carousel-item img{
+    height: 85vh !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+.background-main{
+    background: linear-gradient(to right, #4b6cb7, #182848, #222, transparent);
+}
+
+/* Types Section */
+.card{
+    background: transparent;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px) !important;
+    box-shadow: 0 0 10px 2px blueviolet;
+    border: 1px solid #ddd;
+    transition: var(--transition);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+/* FAQs Section */
+.accordion-header .accordion-button{
+    color: #fff;
+    background: var(--bg-gradient-main) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    backdrop-filter: blur(25px) !important;
+    box-shadow: 0 0 10px 2px blueviolet !important;    
+}
+
+.accordion-body{
+    color: #fff;
+    background: var(--bg-gradient-primary);
+}

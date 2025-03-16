@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+
+    <!-- Bootstrap Link CSS & JS -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand fw-bold fs-3 d-block" href="index.html" data-bs-target="index.html">EventSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#types" data-bs-toggle="dropdown">
+                            Types
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="#">Corporate Events</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Social Events</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Entertainment Events</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Fundraising Events</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Sporting Events</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Exhibitions & Trade Shows</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#Features" data-bs-toggle="dropdown">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="#planning">Planning</a></li>
+                            <li><a class="dropdown-item text-white" href="#marketing">Marketing</a></li>
+                            <li><a class="dropdown-item text-white" href="#execution">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AboutUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">ContactUs</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-danger" type="button" data-bs-target="">Get Started</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid">
+
+        <!-- Hero Section -->
+        <div class="container hero-section" id="hero">
+            <!-- Carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide rounded p-3 border-2 mt-2 mb-2"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active border border-light border-5">
+                        <img src="assets/images/hero-image-1.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-secondary p-3 background-main rounded">Book Corporate Events <span><a href="#"
+                                        class="btn btn-link btn-outline-info text-white fw-bold fs-4">Book
+                                        Now!</a></span></h5>
+                            <p class="bg-secondary p-3 background-main rounded">Tailored to enhance business growth,
+                                corporate events include conferences, workshops, and networking opportunities that
+                                foster innovation and collaboration. They bring professionals together to share insights
+                                and drive industry advancements.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item border border-light border-5">
+                        <img src="assets/images/hero-image-2.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-secondary p-3 background-main rounded">Book Social Events <span><a href="#"
+                                        class="btn btn-link btn-outline-info text-white fw-bold fs-4">Book
+                                        Now!</a></span></h5>
+                            <p class="bg-secondary p-3 background-main rounded">Designed to bring people together,
+                                social events range from private parties to community gatherings, creating an atmosphere
+                                of fun and connection. These events focus on personal interactions and building
+                                relationships in relaxed settings.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item border border-light border-5">
+                        <img src="assets/images/hero-image-3.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-secondary p-3 background-main rounded">Book Trade Events <span><a href="#"
+                                        class="btn btn-link btn-outline-info text-white fw-bold fs-4">Book
+                                        Now!</a></span></h5>
+                            <p class="bg-secondary p-3 background-main rounded">Trade events like expos, conventions,
+                                and fairs provide a platform for businesses to showcase products, Features, and
+                                innovations. They create valuable networking opportunities and insights into market
+                                trends for industry professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Logo Section -->
+
+        <!-- Types Section -->
+        <div class="container-fluid">
+            <div class="container types-section border rounded p-3 mt-2 mb-2" id="types">
+                <h1 class="display-2 text-center fw-bold text-white">Types of Events</h1>
+                <p class="text-center text-white-50 fw-bold">
+                    Event management encompasses a wide variety of events, each with distinct characteristics and
+                    purposes. Here are some common types of events in event management
+                </p>
+
+                <div class="row p-3">
+                    <div class="col col-md-3 col-lg-4 text-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Corporate Events</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-outline-light">Book Now!</a>
+                            </div>
+                            <img src="assets/images/hero-image-1.jpg"
+                                class="card-img-bottom d-block mx-auto w-100 img-fluid img-rounded p-2" alt=""
+                                style="height: 180px !important;">
+                        </div>
+                    </div>
+                    <div class="col col-md-3 col-lg-4 text-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Social Events</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-outline-light">Book Now!</a>
+                            </div>
+                            <img src="assets/images/hero-image-2.jpg"
+                                class="card-img-bottom d-block mx-auto w-100 img-fluid img-rounded p-2" alt=""
+                                style="height: 180px !important;">
+                        </div>
+                    </div>
+                    <div class="col col-md-3 col-lg-4 text-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Entertainment Events</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-outline-light">Book Now!</a>
+                            </div>
+                            <img src="assets/images/ent-event.jpg"
+                                class="card-img-bottom d-block mx-auto w-100 img-fluid img-rounded p-2" alt=""
+                                style="height: 180px !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col col-md-2 col-lg-4 text-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Fundraising Events</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-outline-light">Book Now!</a>
+                            </div>
+                            <img src="assets/images/ch-event.jpg"
+                                class="card-img-bottom d-block mx-auto w-100 img-fluid img-rounded p-2" alt=""
+                                style="height: 180px !important;">
+                        </div>
+                    </div>
+                    <div class="col col-md-2 col-lg-4 text-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sporting Events</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-outline-light">Book Now!</a>
+                            </div>
+                            <img src="assets/images/sp-event.jpg"
+                                class="card-img-bottom d-block mx-auto w-100 img-fluid img-rounded p-2" alt=""
+                                style="height: 180px !important;">
+                        </div>
+                    </div>
+                    <div class="col col-md-2 col-lg-4 text-white">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Trade Events</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-outline-light">Book Now!</a>
+                            </div>
+                            <img src="assets/images/hero-image-3.jpg"
+                                class="card-img-bottom d-block mx-auto w-100 img-fluid img-rounded p-2" alt=""
+                                style="height: 180px !important;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature Section -->
+        <div class="container-fluid">
+            <div class="container service-section border rounded p-3 mt-2 mb-2" id="Features">
+                <h1 class="display-2 text-center fw-bold text-white">Features</h1>
+                <p class="text-center text-white-50 fw-bold">
+                    We are providing you end-to-end Features.
+                </p>
+
+                <div class="container-fluid planning py-3 my-5" id="planning">
+                    <h1 class="fs-3 text-center fw-bold text-white">Planning</h1>
+                    <div class="row">
+                        <div class="col col-6 p-3">
+                            <img src="assets/images/planning.jpg" alt="" class="img-rounded d-block mx-auto w-100"
+                                style="height: 300px !important;">
+                        </div>
+                        <div class="col col-6 text-white p-3">
+                            <p class="fs-4">
+                                Begin with identifying your target audience. These could be 50 something dentists living
+                                in Kansas or teenagers looking for counseling on college scholarships. Recognizing your
+                                target audience, identifying their pain areas and curating your event to have elements
+                                that solve their problem - is a key facet of a successful event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <div class="container-fluid marketing py-3 my-5" id="marketing">
+                    <h1 class="fs-3 text-center fw-bold text-white">Marketing</h1>
+                    <div class="row">
+                        <div class="col col-6 text-white p-3">
+                            <p class="fs-4">
+                                Leverage the power of social media to promote your event organically and with paid ads.
+                                It’s likely that more than half your users are active on Instagram, LinkedIn, Facebook
+                                or Twitter. The reach on these platforms is great and offers an accessible way by which
+                                you can promote your event.
+                            </p>
+                        </div>
+                        <div class="col col-6 p-3">
+                            <img src="assets/images/marketing.jpg" alt="" class="img-rounded d-block mx-auto w-100"
+                                style="height: 300px !important;">
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+                <div class="container-fluid execution py-3 my-5" id="execution">
+                    <h1 class="fs-3 text-center fw-bold text-white">Execution</h1>
+                    <div class="row">
+                        <div class="col col-6 p-3">
+                            <img src="assets/images/execution.jpg" alt="" class="img-rounded d-block mx-auto w-100"
+                                style="height: 300px !important;">
+                        </div>
+                        <div class="col col-6 text-white p-3">
+                            <p class="fs-4">
+                                Check in and badge printing - Your check in chaos needs to be better managed on event
+                                day. It creates a good first Impression for your attendees and helps them easily
+                                navigate long queues. You can even automate badge printing with event management
+                                software like Eventify. All your attendees will then need to do is scan a QR code that
+                                triggers a process to automatically print badges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="container-fluid">
+            <div class="container testimonial-section border rounded p-3 mt-2 mb-2" id="testimonials">
+                <h1 class="display-2 text-center fw-bold text-white">Testimonials</h1>
+                <p class="text-center text-white-50 fw-bold">
+                    What people's opinnion on us.
+                </p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/logo_1.avif" class="img-fluid d-block w-100 my-auto rounded" alt="..." style="min-height: 100%;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Samsung</h5>
+                                        <p class="card-text text-light">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non laudantium natus animi itaque perferendis eligendi illo consectetur earum veritatis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="assets/images/logo-2.png" class="img-fluid d-block w-100 my-auto rounded" alt="..." style="min-height: 100%;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Amazon</h5>
+                                        <p class="card-text text-light">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non laudantium natus animi itaque perferendis eligendi illo consectetur earum veritatis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FAQs -->
+        <div class="container-fluid">
+            <div class="container faq-section border rounded p-3 mt-2 mb-2" id="faqs">
+                <h1 class="display-2 text-center fw-bold text-white">FAQs</h1>
+                <p class="text-center text-white-50 fw-bold">
+                    Frequently Asked Questions to Us
+                </p>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne">
+                                What is event management software?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <pre>
+Event management software is a comprehensive technology solution designed to assist event planners in organizing various types of events,
+such as conferences, workshops, and trade shows, across different formats like onsite, online, and hybrid.                                    
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo">
+                                How does event management software help organize successful events?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <pre>
+Event management software can benefit event planners in many ways. Experience the advantages of Event Management Platform:
+
+Time-saving: Automate tasks and streamline processes with a single tool, eliminating the need for multiple platforms.
+Enhanced attendee engagement: Interact with attendees through various channels for a more immersive experience.
+Personalized customization: Tailor your event website, app, and forms to your preferences.
+Data-driven insights: Access in-depth reports and analytics to make informed decisions and boost event ROI.
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree">
+                                What is the difference between virtual event management software and webinar software?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <pre>
+First things first, virtual events are not webinars. They are more multidimensional and based on the event planner's goals, and they
+might include multiple sessions, networking areas, and even exhibitor booths. Most of these options are not supported by webinar 
+solutions.
+A virtual event management software solution, on the other hand, not only supports the above-mentioned activities, but it also takes care 
+of other event management activities like event planning, ticketing, marketing, and more.
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark text-light p-3 mt-2" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 fs-2 fw-bold">
+                    EventSphere
+                </div>
+                <div class="col-3">
+                    <h1 class="fs-5 mt-3">Events</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Corporate Events</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Social Events</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Entertainment Events</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Fundraising Events</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Sporting Events</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Exhibitions & Trade Shows</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h1 class="fs-5 mt-3">Services</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Planning</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Marketing</a></li>
+                        <li class="list-group-item bg-dark"><a class="text-white" href="#">Execution</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h1 class="fs-5 mt-3">Contact Us</h1>
+                    <form action="" class="form d-flex flex-column gap-2">
+                        <div class="form-input d-flex gap-2 justify-content-center align-items-center">
+                            <label for="name" class="form-label">Name: </label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="form-input d-flex gap-2 justify-content-center align-items-center">
+                            <label for="email" class="form-label">Email: </label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="form-input d-flex gap-2 justify-content-center align-items-center">
+                            <label for="password" class="form-label">Password: </label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                        <div class="form-input d-flex gap-2 justify-content-center align-items-center">
+                            <label for="phone" class="form-label">Phone: </label>
+                            <input type="text" class="form-control" name="phone" id="phone">
+                        </div>
+                        <div class="form-btns">
+                            <button type="button" class="btn btn-primary mt-1 w-100 d-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center fw-bold fs-4 mt-2 border border-2">
+                © 2025, EventSphere Pvt. Ltd. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
