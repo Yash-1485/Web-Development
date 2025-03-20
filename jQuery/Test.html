@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <button type="button" id="btn">
+        Toggle Paragraph
+    </button>
+    <p class="data">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum sapiente quia ipsum. Dignissimos asperiores aperiam, reiciendis, dolorum veniam neque minima quasi quam earum in laboriosam quas eius nostrum itaque, magni quis molestias excepturi incidunt error pariatur repellendus ducimus sapiente? Eaque ut ducimus culpa assumenda officia voluptas rerum itaque quibusdam, cum quia sunt blanditiis inventore asperiores cumque perferendis voluptatum necessitatibus alias distinctio minus similique. Quidem suscipit obcaecati, necessitatibus nulla quis qui adipisci dolores libero veniam! Dolorem nihil doloremque mollitia praesentium blanditiis voluptas animi, optio cupiditate, eaque, aspernatur molestiae. Numquam eum, quos consectetur perspiciatis repudiandae optio animi quod ducimus id, provident officia!
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('p.data').toggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

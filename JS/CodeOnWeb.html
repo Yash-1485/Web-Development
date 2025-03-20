@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code on web</title>
+    <style>
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+    </style>
+</head>
+
+<body>
+    <pre>
+        <code id="code-snippet">
+            function greet() {
+                console.log("Hello, World!");
+            }
+        </code>
+    </pre>
+    <button onclick="copyCode()">Copy</button>
+
+    <script>
+        function copyCode() {
+            // Select the text inside the <code> tag
+            const code = document.getElementById("code-snippet").innerText;
+
+            // Copy to clipboard using the Clipboard API
+            navigator.clipboard.writeText(code).then(() => {
+                alert("Code copied to clipboard!");
+            }).catch(err => {
+                console.error("Failed to copy:", err);
+            });
+        }
+    </script>
+</body>
+
+</html>
