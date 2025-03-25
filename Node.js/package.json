@@ -1,0 +1,25 @@
+{
+  "name": "node.js",
+  "version": "1.0.0",
+  "description": "writing and testing node.js programs",
+  "main": "Node.js",
+  "scripts": {
+    "test": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yash-1485/Web-Development.git"
+  },
+  "keywords": [
+    "node.js",
+    "fileSystem",
+    "OS",
+    "HTTP"
+  ],
+  "author": "Yash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yash-1485/Web-Development/issues"
+  },
+  "homepage": "https://github.com/Yash-1485/Web-Development#readme"
+}
