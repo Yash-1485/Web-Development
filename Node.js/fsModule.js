@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// Asynchronous Functions
 // const Bufferdata=fs.readFile('./Demo.txt',function(err,data){
 //     if(err) console.error(err);
 //     else console.log(data);
@@ -55,11 +56,44 @@ const fs = require('fs');
 // });
 
 // File Data Truncating
-try{    
-    fs.truncate('Node.js/CheckTruncateingFile.txt',function(err){
-        if(err) console.error(err);
-        else console.log('File Truncated Successfully');
-    });
+// try{    
+//     fs.truncate('Node.js/CheckTruncateingFile.txt',function(err){
+//         if(err) console.error(err);
+//         else console.log('File Truncated Successfully');
+//     });
+// }catch(e){
+//     console.log(e);
+// }
+
+// Synchronous Functions
+// Making Directory
+if (! fs.existsSync('Node.js/TxtFiles')){
+    fs.mkdirSync('Node.js/TxtFiles');
+    console.log('Folder Created Successfully');
+}
+
+const path='Node.js/TxtFiles/First.txt';
+
+// fs.writeFileSync(path,data='Hello World!');
+// fs.appendFileSync(path,data=' Hello Universe!');
+// const res=fs.readFileSync(path,{encoding:'utf-8'});
+// const res=fs.readFileSync(path,'utf-8');
+// console.log(res);
+
+try{
+    // const res=fs.readFileSync(path,'utf-8');
+    // console.log(res);
+    // fs.renameSync(path,'Node.js/TxtFiles/Test.txt');
+    // console.log('File renamed successfully');
+    // fs.rmSync('Node.js/TxtFiles/Test.txt');
+    // console.log('File Removed Successfully');
+
+    // fs.copyFileSync(path,'Node.js/TxtFiles/Test-copy.txt');
+    // console.log('File Copied Successfully');
+
+    // fs.truncateSync('Node.js/TxtFiles/Test-copy.txt',10);
+    // fs.truncateSync('Node.js/TxtFiles/Test-copy.txt');
+    // console.log('File truncated successfully');
 }catch(e){
-    console.log(e);
+    console.error(e);
 }
