@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Yash-1485/Web-Development/issues"
   },
-  "homepage": "https://github.com/Yash-1485/Web-Development#readme"
+  "homepage": "https://github.com/Yash-1485/Web-Development#readme",
+  "dependencies": {
+    "one-liner-joke": "^1.2.2"
+  }
 }
