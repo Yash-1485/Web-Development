@@ -1,0 +1,21 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "ExpressJs Practise Series",
+  "main": "First.js",
+  "scripts": {
+    "test": "node First.js"
+  },
+  "keywords": [
+    "Express.js",
+    "Node.js"
+  ],
+  "author": "Yash",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
