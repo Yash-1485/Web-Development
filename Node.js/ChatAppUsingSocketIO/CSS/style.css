@@ -1,0 +1,22 @@
+.message{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #222;
+    margin-top: 5px;
+    padding: 0.5rem;
+    max-width: 45%;
+    word-wrap: normal;
+    width: 100%;
+    color: #fff;
+    font-size: large;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+
+.right{
+    float: right;
+    clear: both;
+}

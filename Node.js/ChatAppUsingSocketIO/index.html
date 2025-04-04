@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="http://localhost:7000/socket.io/socket.io.js"></script>
+    <script defer src="./JS/client.js"></script>
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body class="w-full h-screen px-4 py-4 flex items-center justify-center flex-col bg-gradient-to-b from-emerald-800 via-cyan-900 to-sky-950">
+    <nav class="container border-2 rounded-md border-white my-2 p-2 shadow-zinc-800 shadow-lg">
+        <div class="text-center flex items-center justify-center gap-2">
+            <i class="fa-brands fa-rocketchat text-3xl font-bold text-white"></i>
+            <p class="text-3xl font-bold text-white">Chai Pe Charcha</p>
+        </div>
+    </nav>
+    <div class="container border-2 border-white rounded-md w-full px-2 py-2 h-3/4 overflow-y-auto bg-gradient-to-b from-transperent-900 to-zinc-900 shadow-zinc-800 shadow-lg" id="message_container"></div>
+    <form action="#" class="container send-container mt-2 flex justify-center w-full gap-1" id="send_form">
+        <input type="text" class="border-2 outline-none border-white rounded-md w-full px-2 py-1 text-white text-xl shadow-zinc-800 shadow-lg" name="send_message" id="send_message" autofocus>
+        <button type="submit" class="text-xl font-medium border-2 border-white rounded-md px-2 py-1 text-white shadow-zinc-700 shadow-lg">Send</button>
+    </form>
+</body>
+</html>
