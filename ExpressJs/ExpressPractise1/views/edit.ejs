@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container w-full h-screen bg-zinc-900 px-8 py-8">
+        <div class="form text-white">
+            <a href="/" class="text-blue-500 font-thin text-sm underline my-6 block">Go to Home</a>
+            <form action="/edit" method="post">
+                <input id="oldFilename" name="oldFilename" class="w-full border border-white rounded-md block px-4 py-2 text-white" value="<%= filename %>" readonly>
+                <input type="text" name="newFilename" id="newName" class="w-full border border-white rounded-md block px-4 py-2 text-white mt-2" required>
+                <input type="submit" value="Rename File" class="text-white border border-white rounded-md px-4 py-2 mt-2 bg-yellow-500 font-bold">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

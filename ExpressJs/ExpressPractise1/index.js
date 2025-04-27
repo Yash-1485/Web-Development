@@ -23,6 +23,17 @@ app.post("/create",(req,res)=>{
     });
 });
 
+app.get("/edit/:fileName",(req,res)=>{
+    res.render("edit",{filename:req.params.fileName});
+});
+
+app.post("/edit",(req,res)=>{
+    fs.rename(path.join("./Files",req.body.oldFilename),path.join("./Files",req.body.newFilename),(err)=>{
+        if(err) return err
+        res.redirect("/")
+    });
+});
+
 app.get("/file/:fileName",(req,res)=>{
     fs.readFile(path.join("./Files",req.params.fileName),(err,data)=>{
         if(err) return err

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container bg-zinc-900 w-full h-screen">
+        <a href="/" class="text-blue-500 text-sm underline px-4 pt-4 block">back to home</a>
+        <h1 class="px-4 pt-6 text-white tracking-tigher text-3xl">All Users</h1>
+        <div class="users px-4 py-2 text-white flex gap-3 flex-wrap">
+            <% if(users.length>0) { %>
+                <% users.forEach((user)=>{ %>
+                    <div class="user border-2 border-zinc-500 w-50 py-2 rounded-md">
+                        <div class="image bg-zinc-500 w-46 h-46 mx-auto rounded-md overflow-hidden">
+                            <img src="<%= user.imgurl %>" alt="<%= user.name %>" class="w-full h-full object-cover object-top">
+                        </div>
+                        <h1 class="username px-2 pt-2"><%= user.name %></h1>
+                        <h1 class="email px-2 text-zinc-500"><%= user.email %></h1>
+                        <div class="links flex gap-3 justify-between px-2 pt-4">
+                            <a href="/edit/<%= user._id %>" class="text-sm text-blue-600 underline">Edit User</a>
+                            <a href="/delete/<%= user._id %>" class="text-sm text-red-600 underline">Delete User</a>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <h1 class="text-zinc-500 text-md pt-4 block">No Users yet</h1>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

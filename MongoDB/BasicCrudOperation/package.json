@@ -1,0 +1,16 @@
+{
+  "name": "basiccrudoperation",
+  "version": "1.0.0",
+  "description": "Basic CRUD Operations using express js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.0"
+  }
+}
