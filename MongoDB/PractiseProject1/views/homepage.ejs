@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="container w-full h-screen bg-zinc-900 text-white flex flex-col items-center">
+        <h1 class="text-4xl text-center">
+            This is homepage
+        </h1>
+
+        <div class="myContainer flex flex-col gap-2 w-3/4 justify-center px-4 py-4">
+            <h1>Welcome, <%= user.name.toUpperCase() %></h1>
+            <h1>Name: <%= user.name %></h1>
+            <h1>Age: <%= user.age %></h1>
+            <h1>Email: <%= user.email %></h1>
+        </div>
+
+        <div class="logout w-3/4 text-left px-4 py-2">
+            <a href="/logout" class="underline rounded-md shadow-sm shadow-zinc-500 bg-red-500 px-4 py-2">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
