@@ -229,10 +229,10 @@ import { useContext, useState } from "react";
 //       <Navbar />
 
 //       <Routes >
-//         <Route path="/" element={<Home username="Yash"/>}/>
-//         <Route path="/about" element={<About />}/>
-//         <Route path="/blog" element={<Blog />}/>
-//         <Route path="/contact" element={<Contact />}/>
+//         <Route path="/" element={<Home username="Yash" />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/blog" element={<Blog />} />
+//         <Route path="/contact" element={<Contact />} />
 //       </Routes>
 
 //       <Footer />
@@ -243,19 +243,24 @@ import { useContext, useState } from "react";
 // export default App
 
 // Context API - To centralize the data so that we can use it from anywhere
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Navbar"
+import React from 'react'
 import { DataContext } from "./context/UserContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 const App = () => {
 
   const data = useContext(DataContext);
 
   return (
     <>
-      {/* <Navbar /> */}
-        <div className="text-white container px-10 py-8 bg-zinc-900 w-full min-h-screen">
-          Hello from App, {data}
-        </div>
+      <Navbar />
+      <div className="container w-full min-h-screen bg-zinc-900 text-white flex justify-center items-center">
+        Hello from App,<br /> 
+        Username: {data.username} <br />
+        Age: {data.age} <br />
+        Marks: {data.marks}
+      </div>
       <Footer />
     </>
   )

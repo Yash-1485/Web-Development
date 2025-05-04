@@ -1,17 +1,22 @@
 import { createContext } from "react"
 
-export const DataContext = createContext();
+export const DataContext = createContext()
 
 const UserContext = ({ children }) => {
-    const username = "Yash";
+
+    const data = {
+        username: "Yash",
+        age: 20,
+        marks: 100
+    }
+
     return (
         <>
-            <DataContext.Provider value={username}>
+            <DataContext.Provider value={data}>
                 {children}
-                {/* Hello from UserContext */}
             </DataContext.Provider>
         </>
     )
 }
 
-export default UserContext;
+export default UserContext
