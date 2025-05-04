@@ -7,7 +7,7 @@
 // }
 
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 // import { useState } from "react";
 // import Navbar from './Components/Navbar.jsx';
@@ -203,7 +203,7 @@ import { useState } from "react";
 //       <h1 className="text-3xl my-8">Wheather Data</h1>
 //       <div className="flex justify-center items-center border-1 border-gray-500">
 //         <div className="location_data">
-          
+
 //         </div>
 //         <div className="current_data">
 
@@ -243,11 +243,21 @@ import { useState } from "react";
 // export default App
 
 // Context API - To centralize the data so that we can use it from anywhere
+import Navbar from "./Components/Navbar"
+import Footer from "./Components/Navbar"
+import { DataContext } from "./context/UserContext";
 const App = () => {
+
+  const data = useContext(DataContext);
+
   return (
-    <div>
-      
-    </div>
+    <>
+      {/* <Navbar /> */}
+        <div className="text-white container px-10 py-8 bg-zinc-900 w-full min-h-screen">
+          Hello from App, {data}
+        </div>
+      <Footer />
+    </>
   )
 }
 
