@@ -5,6 +5,21 @@ import Hero from "./components/Hero"
 
 const App = () => {
 
+  const textColors={
+    color0:"text-green-700",
+    color1:"text-orange-900",
+    color2:"text-emerald-900",
+  }
+
+  const gradientTextColors={
+    color0:{
+      color00:"bg-gradient-to-r from-blue-950 via-emerald-800 to-purple-950 text-transparent bg-clip-text",
+      color01:"bg-gradient-to-l from-blue-950 via-emerald-900 to-purple-950 text-transparent bg-clip-text"
+    },
+    color1:"",
+    color2:"",
+  }
+
   const heroText = [
     {
       "text1": "Unleash the Power",
@@ -26,14 +41,15 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
       <Hero
         heroCount={heroCount}
         setHeroCount={setHeroCount}
         playStatus={playStatus}
         setPlayStatus={setPlayStatus}
         heroText={heroText}
+        textColors={textColors}
       />
+      <Navbar />
       <Background heroCount={heroCount} playStatus={playStatus} />
     </>
   )
