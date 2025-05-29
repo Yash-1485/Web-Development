@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Write an expressJS code which loads login.html file upon browsing localhost:3010. The Login.html file contains input for username,password and two checkboxes named remember and subscribe,on submitting the file it should go to /data page where username,password and selected checkboxes are pinted,in addition to that a logout button should be there,onclicking this button it should go back to home page “localhost:3010/”.(GET/POST any method can be used)[Write all necessary files code] -->
+    <form action="/data" method="post">
+        <!-- <p>
+            Username: <input type="text" name="uname" id="uname" required>
+        </p>
+        <p>
+            Password: <input type="password" name="pwd" id="pwd">
+        </p>
+        <p>
+            Remember: <input type="checkbox" name="ck" id="ck1" value="remember"> 
+            Subscribe: <input type="checkbox" name="ck" id="ck2" value="subscribe">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p> -->
+
+        <p>
+            Name: <input type="text" name="name" id="name">
+        </p>
+        <p>
+            Email: <input type="email" name="email" id="email">
+        </p>
+        <p>
+            Message: <textarea name="msg" id="msg" rows="5" cols="50"></textarea>
+        </p>
+        <p>
+            Rating: 
+            Bad <input type="radio" name="rating" id="rating" value="Bad">
+            Average <input type="radio" name="rating" id="rating" value="Average">
+            Good <input type="radio" name="rating" id="rating" value="Good">
+            Very Good <input type="radio" name="rating" id="rating" value="Very Good">
+            Excellent <input type="radio" name="rating" id="rating" value="Excellent">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>

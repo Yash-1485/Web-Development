@@ -1,0 +1,132 @@
+package Collection;
+
+import java.util.*;
+
+public class Run_1 {
+    static ArrayList<Participants> al = new ArrayList<>();
+    static Stack<Character> correctAnswers = new Stack<>();
+
+    public static void main(String[] args) throws InterruptedException {
+        Scanner sc = new Scanner(System.in);
+        correctAnswers.add('A');
+        correctAnswers.add('B');
+        correctAnswers.add('A');
+        correctAnswers.add('D');
+        correctAnswers.add('C');
+        for (int i = 0; i < 3; i++) {
+            System.out.println("---------------------------------------------");
+            System.out.println("Enter Details about Participant #" + (i + 1));
+            boolean flag = true;
+            System.out.println("Enter Name of Participant: ");
+            String name = sc.next();
+            System.out.println("Enter Age of Participant: ");
+            int age = sc.nextInt();
+
+            String contactNumber = "";
+            while (flag) {
+                System.out.println("Enter Contact Number of Participant: ");
+                contactNumber = sc.nextLine();
+
+                if (contactNumber.length() == 10) {
+                    for (int j = 0; j < contactNumber.length(); j++) {
+                        flag = true;
+                        if (contactNumber.charAt(j) >= '0' && contactNumber.charAt(j) <= '9') {
+                            flag = false;
+                        } else {
+                            break;
+                        }
+                    }
+                } else {
+                    System.out.println("Kindally enter 10 digit mobile number");
+                }
+            }
+
+            al.add(new Participants(name, contactNumber, age));
+            System.out.println("---------------------------------------------");
+        }
+
+        Collections.sort(al, Comparator.comparing(Participants::getAge));
+
+        for (int i = 0; i < al.size(); i++) {
+            System.out.println("---------------------------------------------");
+            Thread t1 = new Thread(al.get(i));
+            System.out.println("Participant Name: " + al.get(i).getName());
+            System.out.println("Participant Age: " + al.get(i).getAge());
+            t1.start();
+            t1.join();
+            System.out.println("---------------------------------------------");
+        }
+
+        int score[] = new int[al.size()];
+        int highestScore = score[0];
+        int winner = 0;
+        for (int j = 0; j < al.size(); j++) {
+            System.out.println("---------------------------------------------");
+            System.out.println("Participant Name: " + al.get(j).getName());
+            System.out.println("Participant Age: " + al.get(j).getAge());
+            System.out.println("Participant Contact Number: " + al.get(j).contactNumber);
+            for (int i = 0; i < correctAnswers.size(); i++) {
+                if (correctAnswers.get(i) == al.get(j).answers.get(i)) {
+                    score[j]++;
+                    if (score[j] > highestScore) {
+                        winner = j;
+                        highestScore = score[j];
+                    }
+                }
+            }
+            System.out.println("Score: " + score[j]);
+            System.out.println("---------------------------------------------");
+        }
+        System.out.println("---------------------------------------------");
+        System.out.println("Winner Is: ");
+        System.out.println("Participant Name: " + al.get(winner).getName());
+        System.out.println("Participant Age: " + al.get(winner).getAge());
+        System.out.println("Participant Contact Number: " + al.get(winner).contactNumber);
+        System.out.println("Highest Score is: " + highestScore);
+        System.out.println("---------------------------------------------");
+
+        sc.close();
+    }
+}
+
+class Participants implements Runnable {
+    Scanner sc = new Scanner(System.in);
+    String name, contactNumber;
+    int age;
+    ArrayList<Character> answers = new ArrayList<>();
+
+    public Participants(String name, String contactNumber, int age) {
+        this.name = name;
+        this.contactNumber = contactNumber;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    synchronized public void run() {
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("Q.1 National Bird of India... (A) Peacock  (B) Sparrow  (C) Duck  (D) Owl");
+        System.out.println("Q.2 Independence Year of India... (A) 1955  (B) 1947  (C) 1999  (D) 1929");
+        System.out.println("Q.3 Gandhi Jayanti is on... (A) 2nd Oct  (B) 5th Oct (C) 9th Oct (D) 7th Oct");
+        System.out.println("Q.4 Count of States of India... (A) 17  (B) 21  (C) 25  (D) 28");
+        System.out.println("Q.5 How many continents are there in the world... (A) 5  (B) 6  (C) 7  (D) 8  ");
+        System.out.println("---------------------------------------------------------------------------------");
+
+        System.out.println("Enter Your Answers: ");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Enter Answer of Question No. " + (i + 1) + " : ");
+            char c = sc.nextLine().charAt(0);
+            answers.add(c);
+        }
+    }
+}

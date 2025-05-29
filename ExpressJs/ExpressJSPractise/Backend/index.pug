@@ -1,0 +1,74 @@
+html 
+head
+    title Index
+    //- title Hello World!
+    //- link(rel="stylesheet", href="../pages/style.css")
+    //- style. 
+    //-     #button{
+    //-         background-color: red;
+    //-     }
+    //- style 
+    //-     include ../pages/style.css
+body
+    //- h1 Hello World!
+    //- h2(style="color: red;background-color: yellow;") Hello World!
+    //- - var a=10;
+    //- h4= "The value of a is: "+a
+
+    //- | This is the plain text will not be wrapped with any tags
+    //- p(style="text-align: center; font-size: large; font-weight: bolder;") This is the plain text will be wrapped with p tags
+
+    //- button(type="button").button#button I am a button
+
+    // Create one pug file which contains a text field and an email field. By submitting the form, on next page called “/data” submitted data will be displayed.
+    //- form(action="/data", method="post")
+    //-     p
+    //-         |Name 
+    //-         input(type="text", name="name", id="name")
+    //-     p
+    //-         |Email 
+    //-         input(type="email", name="email", id="email")
+    //-     p
+    //-         input(type="submit", value="Submit")
+
+    //- -const obj=object;
+    //- h1 #{obj.message}
+    //- h2 #{obj.name}
+    //- h3 #{obj.id}
+
+    // P a g e 9 | 26
+    //- Example-4
+    //- Write express js script to load student form using pug file which contains following fields
+    //- 
+    //- Name(text)
+    //- 
+    //- Email(email)
+    //- 
+    //- Course(radio : CE, IT, CSE)
+    //- Once form submitted then data must be displayed on ‘/data’ page using pug file. Means data should be submitted from express application to PUG file.
+
+    form(action="/data", method="post")
+        p
+            |Name: 
+            input(type="text", name="name", id="name", required)
+        p
+            |Email: 
+            input(type="email", name="email", id="email", required)
+        p
+            |Course: 
+            |CE 
+            input(type="radio", name="course", id="course1", required, value="CE") 
+            |IT 
+            input(type="radio", name="course", id="course2", required, value="IT") 
+            |CSE 
+            input(type="radio", name="course", id="course3", required, value="CSE") 
+        p
+            |Hobbies: 
+            |Hobby1 
+            input(type="checkbox", name="hobbies", id="course1", value="Hobby1") 
+            |Hobby2 
+            input(type="checkbox", name="hobbies", id="course2", value="Hobby2") 
+            |Hobby3 
+            input(type="checkbox", name="hobbies", id="course3", value="Hobby3") 
+        p
+            input(type="submit", value="Submit")

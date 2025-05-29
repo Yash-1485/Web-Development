@@ -1,0 +1,28 @@
+html 
+head
+    title Upload File
+body
+    h3(style="color: red;background-color: aqua;text-align: center;") Upload Your CV
+    form(action="/upload", method="post", enctype="multipart/form-data")
+        p 
+            | Upload from here: 
+            input(type="file", name="lju", id="lju", accept="")
+        p
+            input(type="submit", value="Submit")
+    //- table(border="1", rules="all", align="center")
+    //-     tr
+    //-         th Sr.no 
+    //-         th Subject
+    //-         th Faculty Name
+    //-     tr
+    //-         td 1
+    //-         td FSD-2 
+    //-         td ABC 
+    //-     tr
+    //-         td 2
+    //-         td Python-2 
+    //-         td DEF
+    //-     tr
+    //-         td 3
+    //-         td COA 
+    //-         td XYZ 

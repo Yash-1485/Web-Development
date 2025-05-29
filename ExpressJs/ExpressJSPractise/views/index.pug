@@ -1,0 +1,104 @@
+html 
+    head 
+        title Hello World!
+        style
+            include ../public/myCSS.css
+        //- Part 3
+        //- style.
+            //- #c1{
+            //-     color: red;
+            //- }
+            //- .c2{
+            //-     background-color: lightgrey;
+            //- }
+
+        //- Part 4 External CSS file
+        //- style
+        //-     include ../myCSS.css
+
+        //- Part 5
+        //- Importing data from the backend
+
+    body
+        //- - const name="Yash"
+        //- Attributes written in h1() as comma seperated
+        //- Dynamically add code
+        //- h1 some text #{dynamic code}
+        //- Or h1= "some text"+dynamic code
+        //- Calculations can be performed by '-' 
+        //- plain data can be written as-> h1 data
+        //- To go to the inside of tag and refer as a text file put a .(dot) after tag'
+        //- | Password: -> This is for plain text
+
+        //- Part 1
+        //- h1(style="color: green;") Hello World! #{name}
+        //- h1(style="color: green;")= "Hello World! " + name
+        //- a(href="https://www.google.com") Click Here
+
+        //- Part2
+        //- table(border='1px solid',style='border-collapse:collapse;color:red')
+        //-     tr
+        //-     th name
+        //-     th id
+        //-     tr
+        //-     td abc
+        //-     td 1
+        //-     tr
+        //-     td xyz
+        //-     td 2
+        //-     // Unbuffered Code
+        //- -var number = 2
+        //- -var color = 'Black'
+        //- -var list = ["India", "USA", "UK"]
+        //-     // 9 Buffered Code
+        //- h4= "3 times number is: " + number*3
+        //- h3= "I Like " + color + " color"
+        //- h3= "Country: " + list[2]
+
+
+        //- Part 3, Part 4
+        //- h1#c1 Hello World! 
+        //- h2.c2 Hello Universe!
+
+        //- Part 5,6
+        //- - const obj=object
+        //- h1 #{object.name}
+        //- a(href=object.url) Click Here
+
+        //- Form
+        //- .form
+        //-     h2 Form
+        //-     form(action="/login",method="post")
+        //-         div
+        //-             label(for="username") Username:
+        //-             input(type="text", name="username", id="username", required, autofocus)
+        //-         //- | Password: -> This is for plain text
+        //-         div
+        //-             label(for="password") Password:
+        //-             input(type="password", name="password",id="password", required)
+        //-         div
+        //-             input(type="submit",value="login")
+
+        //- Form-2
+        .form 
+            h2 Student Form
+            form(action="/student", method="post")
+                div 
+                    label(for="name") Name: 
+                    input(type="text", name="name", id="name")
+                div 
+                    label(for="email") Email: 
+                    input(type="email", name="email", id="email")
+                div(id="course") 
+                    label(for="course") Course: 
+                    p
+                        label(for="ce") CE 
+                        input(type="radio", name="course", value="CE", id="ce")
+                    p
+                        label(for="it") IT 
+                        input(type="radio", name="course", value="IT", id="it")
+                    p
+                        label(for="cse") CSE 
+                        input(type="radio", name="course", value="CSE", id="cse")
+                div
+                    input(type="submit", value="Submit Form")
