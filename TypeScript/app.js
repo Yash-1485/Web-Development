@@ -171,3 +171,66 @@ class GPay extends Payment {
 }
 let g = new GPay(1, 1);
 console.log(g);
+// Functions
+// Function with callback
+function callbackFunction(a, b, cb) {
+    console.log(cb(100));
+}
+callbackFunction("ABC", 2, (num) => {
+    return num;
+});
+function abc(a, b) {
+    if (typeof a === "string" && b === undefined) {
+        console.log(a);
+        return;
+    }
+    if (typeof a === "string" && typeof b === "number") {
+        return b;
+    }
+    else
+        throw new Error("Invalid Function");
+}
+abc("ABC");
+abc("ABC", 1);
+// Generics
+// Generic Function
+// Generic Interface
+// Generic Classes
+// If I don't know the what will be the argument given by the user while calling the function, Generics comes to the picture
+function abcd(a) {
+    // return "abc" as T
+    // return <T>"abc"
+    return a;
+}
+function abcde(obj) {
+    console.log(obj);
+}
+// abcde({name:"Yash",age:19});
+class ABC {
+    constructor(a) {
+        this.a = a;
+    }
+}
+// let objABC=new ABC("Hello");
+// console.log(objABC);
+// Modules
+// All about exporting
+// export default - use when only one thing is exporting from a file as object
+// export - use when more then one functions or classes or else needed to export
+// Type Assertion
+function typeAssertion(a) {
+    let b;
+    // TypeGuard and Type Narrowing
+    if (typeof a === "string") {
+        b = a.toUpperCase();
+    }
+    else if (typeof a === "number") {
+        b = a.toPrecision();
+    }
+    return b;
+}
+console.log(typeAssertion(1));
+// Type Casting
+let n = Number("12345");
+// console.log(n,typeof n);
+// TypeGuard and TypeScript Utility
