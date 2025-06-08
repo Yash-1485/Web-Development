@@ -11,5 +11,8 @@ ReactJs Topics
   useReducer
   useContext
   useEffect
+  useRef
+  useMemo
+  useCallback
   React Forms
   Axios
